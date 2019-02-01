@@ -1,0 +1,42 @@
+/*列表中文件名长度超限的部分以省略号代之*/
+#catListView ul li {
+    list-style-type: none;
+}
+
+#catListView a {
+    color: #800dec;
+    text-decoration: none;
+}
+
+/*a:hover {
+    color: #999999;
+}
+*/
+#catListView li {
+    width: 200px;
+    white-space: nowrap;
+    /*强制在同一行内显示所有文本，合并文本间的多余空白，直到文本结束或者遭遇br对象。 */
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+    -moz-text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/* firefox only wtf is? pls let me know*/
+#catListView li:not(li) {
+    clear: both;
+}
+
+#catListView li:not(li) a {
+    max-width: 175px;
+    float: left;
+}
+
+#catListView li:not(li):after {
+    content: "...";
+    float: left;
+    width: 25px;
+    padding-left: 5px;
+    color: #df3a0e;
+}
