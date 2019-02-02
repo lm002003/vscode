@@ -1,5 +1,9 @@
 # 以下文档为分类笔记
 
+## 图片居中时，行首必须加空格
+
+ <div align=center>![这里行首必须加空格](https://img2018.cnblogs.com/blog/1588269/201902/1588269-20190202161358692-1895602837.png)</div>
+
 ## CMD中退出python的命令
 
 * 在Windows中，按Ctrl+Z，再按回车退出
@@ -14,6 +18,7 @@
 * 想要在vscode中运行python代码必须要告诉vscode使用哪个解释器才行
 
 方法1. 打开命令面板（Ctrl+Shift+P）输入Python: Select Interpreter然后选择一个解释器。
+![](https://img2018.cnblogs.com/blog/1588269/201902/1588269-20190202170617167-1100568804.png)
 方法2. 你也可以直接点击下图中的 Select Python Environment来进行选择。
 
  <div align=center>![pic0](https://img2018.cnblogs.com/blog/1588269/201902/1588269-20190202161358692-1895602837.png)</div>
