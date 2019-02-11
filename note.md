@@ -216,6 +216,7 @@ VScode之初始设置
 <center>
 <img src="https://img2018.cnblogs.com/blog/1588269/201902/1588269-20190210231418107-1910450476.png" width="50%" />
 </center>
+
 ## 2. `Setting Sync`安装(用来同步其他机子上的插件和配置---要用到`Gist ID`!)
 <center>
 <img src="https://img2018.cnblogs.com/blog/1588269/201902/1588269-20190210232959472-1504049836.png" width="50%" />
@@ -226,17 +227,38 @@ VScode之初始设置
 </center>
 同步完成后,插件列表显示`reload`,重启VScode即可
 
-## 扩展阅读2
-* Visual Studio Code 插件安装方法
-方法 1. Ctrl/Cmd+Shift+P (或 F1) 输入 Extensions, 选中 Install Extension然后输入插件名称/关键字.
-方法 2. Ctrl/Cmd+P (或 Ctrl/Cmd + E) 输入 ext install [插件关键字/名称]
-方法 3. 直接点击左侧栏这个扩展按钮（Ctrl+Shift+X）
-`不在插件商店的插件, 则可以放置到用户目录下的 .vscode/extensions 文件夹中~ 重启 VS Code 即可生效.`
-* [注]有些插件和配置项可能还要手工操作:
-    1. `python安装了没有?`版本和安装路径各个机子可能不同
-    2. vscode-icons插件也提示手工修改:File > Preferences > File Icon Theme > VSCode Icons.
+## 扩展阅读1：Git初次设置
 
-* VScode安装版本的问题:
+<font size=5 color="#dd0000"><u>特别注意：新安装的Git，首次运行需要进行相关的账号设置</u></font>
+
+* 在运行`git commit`时
+<center>
+<img src="https://img2018.cnblogs.com/blog/1588269/201902/1588269-20190211100328071-559445133.png" width="80%" />
+</center>
+跳出如下错误提示`“Make sure you configure your 'user.name' and 'user.email' in git.”`
+<center>
+<img src="https://img2018.cnblogs.com/blog/1588269/201902/1588269-20190211010811740-465618591.png" width="80%" />
+</center>
+<center>
+<img src="https://img2018.cnblogs.com/blog/1588269/201902/1588269-20190211101654897-1779957462.png" width="80%" />
+</center>
+在`Git Bash`下输入如下两条命令
+<center>
+<img src="https://img2018.cnblogs.com/blog/1588269/201902/1588269-20190211010824175-191780290.png" width="80%" />
+</center>
+
+* 在运行`push`命令时，跳出如下登录框，按要求输入即可
+<center>
+<img src="https://img2018.cnblogs.com/blog/1588269/201902/1588269-20190211010837679-1918661635.png" width="50%" />
+</center>
+
+成功输入后，一切OK！
+<center>
+<img src="https://img2018.cnblogs.com/blog/1588269/201902/1588269-20190211102738545-1525989202.png" width="80%" />
+</center>
+
+## 扩展阅读2:VScode安装版本的问题
+
 <center>
 <img src="https://img2018.cnblogs.com/blog/1588269/201902/1588269-20190210232333427-1633833132.png" width="50%" />
 </center>
@@ -247,17 +269,18 @@ VScode之初始设置
 <img src="https://img2018.cnblogs.com/blog/1588269/201902/1588269-20190210232741783-528904244.png" width="50%" />
 </center>
 
+## 扩展阅读3:VScode插件安装
+
+* Visual Studio Code 插件安装方法
+方法 1. Ctrl/Cmd+Shift+P (或 F1) 输入 Extensions, 选中 Install Extension然后输入插件名称/关键字.
+方法 2. Ctrl/Cmd+P (或 Ctrl/Cmd + E) 输入 ext install [插件关键字/名称]
+方法 3. 直接点击左侧栏这个扩展按钮（Ctrl+Shift+X）
+`不在插件商店的插件, 则可以放置到用户目录下的 .vscode/extensions 文件夹中~ 重启 VS Code 即可生效.`
+* [注]有些插件和配置项可能还要手工操作:
+    1. `python安装了没有?`版本和安装路径各个机子可能不同
+    2. vscode-icons插件也提示手工修改:File > Preferences > File Icon Theme > VSCode Icons.
+
 ---
-![](https://img2018.cnblogs.com/blog/1588269/201902/1588269-20190211010811740-465618591.png)
-
-![](https://img2018.cnblogs.com/blog/1588269/201902/1588269-20190211010824175-191780290.png)
-
-![](https://img2018.cnblogs.com/blog/1588269/201902/1588269-20190211010837679-1918661635.png)
-
-![](https://img2018.cnblogs.com/blog/1588269/201902/1588269-20190211010845886-618926282.png)
-
-![](https://img2018.cnblogs.com/blog/1588269/201902/1588269-20190211010852979-1813161935.png)
-
 
 ### 我再测试一下
 
