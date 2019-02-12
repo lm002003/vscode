@@ -1,3 +1,11 @@
+<!-- TOC -->
+autoauto1. [ubuntu 16.04 启用root用户方法](#ubuntu-1604-启用root用户方法)
+auto2. [linux下 如何切换到root用户](#linux下-如何切换到root用户)
+auto3. [Linux中切换用户的命令su- 与su的区别](#linux中切换用户的命令su--与su的区别)
+auto4. [在Ubuntu 18.04.1 LTS server下安装VMware Tools](#在ubuntu-18041-lts-server下安装vmware-tools)
+autoauto<!-- /TOC -->
+
+<a id="markdown-ubuntu-1604-启用root用户方法" name="ubuntu-1604-启用root用户方法"></a>
 ## ubuntu 16.04 启用root用户方法
 
 1. ubuntu默认不允许使用root登录，因此初始root账户是不能使用的，需要在普通账户下利用sudo权限修改root密码。首先登录普通用户。
@@ -11,6 +19,7 @@
 
 `由于用户通过su root命令直接获取root权限，从而造成用户的权限太大，也就可能给系统造成危险。为了既保证系统的安全又可以执行相应命令，sudo也就以此诞生。`
 
+<a id="markdown-linux下-如何切换到root用户" name="linux下-如何切换到root用户"></a>
 ## linux下 如何切换到root用户
 
 默认安装完成之后并不知道root用户的密码，那么如何应用root权限呢？
@@ -27,6 +36,8 @@
 输入root用户的密码即可。
 
 su "king"或者exit、logout 、ctrl+d回到用户权限
+
+<a id="markdown-linux中切换用户的命令su--与su的区别" name="linux中切换用户的命令su--与su的区别"></a>
 
 ## Linux中切换用户的命令su- 与su的区别
 
@@ -58,3 +69,28 @@ su命令可以用来交互地更改你的用户ID和组ID。 `Su是switch user �
 ![](https://img2018.cnblogs.com/blog/1588269/201902/1588269-20190211180630435-139452552.jpg)
 ![](https://img2018.cnblogs.com/blog/1588269/201902/1588269-20190211180756267-1284811979.jpg)
 
+<a id="markdown-在ubuntu-18041-lts-server下安装vmware-tools" name="在ubuntu-18041-lts-server下安装vmware-tools"></a>
+## 在Ubuntu 18.04.1 LTS server下安装VMware Tools
+
+开启ubuntu server虚拟机
+    * `PS`:不过，我的机子上直接显示`重新安装VMware Tools(T)...`(是不是代表已经安装了Tools？)如下图
+![](https://img2018.cnblogs.com/blog/1588269/201902/1588269-20190212112205426-1991309295.jpg)
+    * 在下图红框位置，直接`保持纵横比拉伸`项就可以了
+![](https://img2018.cnblogs.com/blog/1588269/201902/1588269-20190212112632094-320728025.jpg)
+1. 如果没有，就老老实实一步步安装吧:
+2. vmware workstation菜单项，选取虚拟机(M) --> 安装VMware Tools
+3. mkdir /mnt/cdrom  #创建一个文件夹，以挂载cdrom
+4. `mount /dev/cdrom /mnt/cdrom  #<font color=red><u>你可以先去/dev目录下查看有没有cdrom这个设备，这一步是挂载cdrom到/mnt/cdrom</u></font>
+   * 【PS】`其实3、4两步骤任何一个都行，加载以后就会有光驱显示出来了`
+5. cd /mnt/cdrom
+6. cp VMwareTools-10.0.5-3228253.tar.gz /mnt/VMwareTools-10.0.5-3228253.tar.gz #因为在/mnt/cdrom为挂载点。
+`我们连root权限下也不能操作，所以复制出挂载点再操作`
+7. cd /mnt
+8. tar -zxvf  VMwareTools-10.0.5-3228253.tar.gz #解压操作不多说
+9.  cd  vmware-tools-distrib  #解压之后多出 vmware-tools-distrib这个文件夹，进去
+10. ./vmware-install.pl #安装(.pl是perl文件)
+    * 【PS】如果前面没有提升权限，这里就要用`sudo su`(sudo su当前目录不变)或`sudo ./vmware-install.pl`运行
+> 接着狂按回车就成功了，记录一下吧，谁叫这个是服务器版本完全没界面，
+> 安装了VMware Tools后，虚拟机与主机可以通过“拖拽”来对传文件。
+> 按照以上的教程安装好了VMware tools之后，如果没有自动全屏，或者是按Ctrl + Alt + Enter也没有全屏的时候，就应该设置ubuntu的分辨率（这个应该是桌面版的吧？）
+> 
