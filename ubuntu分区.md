@@ -1,120 +1,3 @@
-<!-- TOC -->autoauto- [ubuntu 16.04 启用root用户方法](#ubuntu-1604-启用root用户方法)auto- [linux下 如何切换到root用户](#linux下-如何切换到root用户)auto- [Linux中切换用户的命令su- 与su的区别](#linux中切换用户的命令su--与su的区别)auto- [在Ubuntu 18.04.1 LTS server下安装VMware Tools](#在ubuntu-18041-lts-server下安装vmware-tools)autoauto<!-- /TOC -->
-
-## ubuntu 16.04 启用root用户方法
-
-1. ubuntu默认不允许使用root登录，因此初始root账户是不能使用的，需要在普通账户下利用sudo权限修改root密码。首先登录普通用户。
-    * 但是如果没有给root设置初始密码，就会抛出 su:Authentication failure这样的问题。
-    * 默认root密码是随机的，即每次开机都有一个新的root密码。
-    * 第一个user是在admin组 ，所以他可以给root设置密码
-2. 在终端输入sudo passwd root，按回车，然后系统会提示你输入普通用户的密码(终端输入的密码都是不显示的-`而且不认右侧小键盘`)。输入后，按回车，然后重复输入两次新的root密码即可激活root用户。
-![](https://img2018.cnblogs.com/blog/1588269/201902/1588269-20190211153341732-1811661529.jpg)
-    * 此方式仅适用于ubuntu系列的发行版，不能用于redhat或其他linux发行版。
-    * 提示符$代表一般用户，提示符#代表root用户;输入exit命令，退出root并返回一般用户。
-
-`由于用户通过su root命令直接获取root权限，从而造成用户的权限太大，也就可能给系统造成危险。为了既保证系统的安全又可以执行相应命令，sudo也就以此诞生。`
-
-## linux下 如何切换到root用户
-
-默认安装完成之后并不知道root用户的密码，那么如何应用root权限呢？
-
-1. sudo+命令:`xzm@ubuntu:~$sudo+命令`  
-这样输入当前管理员用户密码就可以得到超级用户的权限。但默认的情况下5分钟root权限就失效了。
-(2)sudo -i:`xzm@ubuntu:~$sudo -i`
-通过这种方法输入当前用户的密码就可以进到root用户,即`~#`，pwd为`/root`。
-(3)sudo su:`xzm@ubuntu:~$sudo su`
-通过这种方法输入当前用户的密码就可以进到root用户,即`/home/ederson#`,pwd为`/home/ederson`
-(4)如果想一直使用root权限，要通过su切换到root用户。那我们首先要重设置root用户的密码：
-`xzm@ubuntu:~$sudo passwd root`这样就可以设置root用户的密码了。
-之后就可以自由的切换到root用户了`xzm@ubuntu:~$su`
-输入root用户的密码即可。
-
-su "king"或者exit、logout 、ctrl+d回到用户权限
-
-
-## Linux中切换用户的命令su- 与su的区别
-
-* `su`命令和`su -`命令最大的本质区别就是：
-> * 前者只是切换了root身份，但Shell环境仍然是普通用户的Shell；
-> * 而后者连用户和Shell环境一起切换成root身份了。只有切换了Shell环境才不会出现PATH环境>变量错误。
-> * `su`切换成root用户以后，pwd一下，发现工作目录仍然是普通用户的工作目录；
-> * `su -`命令切换以后，工作目录变成root的工作目录了。用echo $PATH命令看一下su和su -以后的环境变量有何不同。以此类推，要从当前用户切换到其它用户也一样，应该使用su -命令。
-
-1. `su -` root is the same as su - just like login as root,
-then the shell is login shell,which mean it will expericene a login process,
-usually .bash_profile and .bashrc will be sourced
-
-2. `su` root is the same as su like you open an interactive shell in root name,
-then only .bashrc will be sourced.
-
-`su` 后面不加用户是默认切到 root
-`su username`是不改变当前变量
-`su - username`是改变为切换到用户的变量
-<font size=5 color="#dd0000"><u>也就是说su只能获得root的执行权限，不能获得环境变量</u></font>
-<font size=5 color="#dd0000"><u>而su -是切换到root并获得root的环境变量及执行权限</u></font>
-
-语法：
-1. `$ su [user_name]`
-su命令可以用来交互地更改你的用户ID和组ID。 `Su是switch user 或set user id的一个缩写`。这个命令让你开启一个子进程，成为新的用户ID和赋予你存取与这个用户ID关联所有文件的存取权限。因此，出于安全的考虑，你在实际转换身份时，会被要求输入这个用户帐号的密码。
-<u>如果没有参数，su命令将你转换为root(系统管理员)</u>。root帐号有时也被称为超级用户，因为这个用户可以存取系统中的任何文件。也正是这个原因，许多人将su命令看成是`supper-user(超级用户)的一个缩写`。当然，你必须要提供root密码。想要回到你原先的用户身份，不要再使用su命令，你只需要使用exit命令退出你使用su命令而生成的新的对话进程。
-2. `$ su – username`
-一些配置文件是为你的对话线索而设立的。当你使用命令su username时，你的对话特征和你原始的登录身份一样。如果你想要你的对话进程拥有转换后的用户ID一致的特征，你要使用短斜杠:su – username。
-![](https://img2018.cnblogs.com/blog/1588269/201902/1588269-20190211180630435-139452552.jpg)
-![](https://img2018.cnblogs.com/blog/1588269/201902/1588269-20190211180756267-1284811979.jpg)
-
-## 在Ubuntu 18.04.1 LTS server下安装VMware Tools
-
-开启ubuntu server虚拟机
-    * `PS`:不过，我的机子上直接显示`重新安装VMware Tools(T)...`(是不是代表已经安装了Tools？)如下图
-![](https://img2018.cnblogs.com/blog/1588269/201902/1588269-20190212112205426-1991309295.jpg)
-    * 在下图红框位置，直接`保持纵横比拉伸`项就可以了
-![](https://img2018.cnblogs.com/blog/1588269/201902/1588269-20190212112632094-320728025.jpg)
-1. 如果没有，就老老实实一步步安装吧:
-<font color=red><u>但是,共享文件夹时,必须重新安装VMware Tools</u></font>
-2. vmware workstation菜单项，选取虚拟机(M) --> 安装VMware Tools
-3. mkdir /mnt/cdrom  #创建一个文件夹，以挂载cdrom
-4. mount /dev/cdrom /mnt/cdrom  
-<font color=red><u>#你可以先去/dev目录下查看有没有cdrom这个设备，这一步是挂载cdrom到/mnt/cdrom</u></font>
-【PS】`其实3、4两步骤任何一个都行，加载以后就会有光驱显示出来了`
-5. cd /mnt/cdrom
-6. cp VMwareTools-10.0.5-3228253.tar.gz /mnt/VMwareTools-10.0.5-3228253.tar.gz
-<font color=red><u>#因为在/mnt/cdrom为挂载点。</u></font>`我们连root权限下也不能操作，所以复制出挂载点再操作`
-7. cd /mnt
-8. tar -zxvf  VMwareTools-10.0.5-3228253.tar.gz #解压操作不多说
-9.  cd  vmware-tools-distrib
-    #解压之后多出 vmware-tools-distrib这个文件夹，进去
-10.  ./vmware-install.pl #安装(.pl是perl文件)
-【PS】如果前面没有提升权限，这里就要用`sudo su`(sudo su当前目录不变)或`sudo ./vmware-install.pl`运行
-> 接着狂按回车就成功了，记录一下吧，谁叫这个是服务器版本完全没界面，
-> 安装了VMware Tools后，虚拟机与主机可以通过“拖拽”来对传文件。
-> 按照以上的教程安装好了VMware tools之后，如果没有自动全屏，或者是按Ctrl + Alt + Enter也没有全屏的时候，就应该设置ubuntu的分辨率（这个应该是桌面版的吧？）
-
-## VScode设置让鼠标滚动改变字体大小
-
-右边输入"editor.mouseWheelZoom": true
-
-## ubuntu16.04优化/boot分区空间
-
-1. 先可了解boot分区使用情况。
-使用"系统监视器"
-或者
-输入"df -h"命令
-2. 查看但前所有的linux内核版本。
-输入命令"sudo apt-get autoremove linux-image-"接着`按两下tab`。
-解释：linux内核文件名称是以"linux-image-"开头的，连按两下tab就会出现多选列表，即展示当前多有的linux内核版本。
-或者使用"dpkg --get-selections | grep linux-image"命令，查看已安装的软件，管道grep过滤
-3. 查看当前使用的linux版本。
-"uname -a"
-4. 卸载其他低版本(一般当前版本为最高版本，故只留一个最高版本，如果空间够你也可以留最高的两个版本保险)。
-卸载命令(注意了解下面apt-get的三种卸载方式区别，`推荐用第三种`)：
-sudo apt-get remove 文件名称
-sudo apt-get autoremove 文件名称
-sudo apt-get purge 文件名称
-5. 删除卸载不完全的文件
-sudo apt-get autoremove
-![](https://img2018.cnblogs.com/blog/1588269/201902/1588269-20190212222418339-1916228852.png)
-6. 对于后面有提示 deinstall 的条目，可以通过如下命令删除：
-$ sudo dpkg -P linux-image-extra-4.8.0-36-generic
-
 ## Ubuntu分区方案（菜鸟方案、常用方案和进阶方案）
 
 ### 菜鸟方案
@@ -158,7 +41,7 @@ Ps：（本人安装的是Ubuntu14.04版本，100G硬盘分区方案）
 所谓「最好」，是对整个作业系统的稳定而言，并非「必要」。如同我一开始所言，只要”/”存在，Linux系统即可运作。
 /home /var /usr三者必须思考哪些空间必须额外分割出来（参考后面各分区的作用）。当然就系统稳定来说，最好都分割出来。
 
-## 附：Linux各个分区的作用
+## 【附】Linux各个分区的作用
 
 / 根目录，建议在根目录下面只有目录，不要直接有文件。
 
@@ -211,7 +94,7 @@ swap 交换空间，相当于Windows上的虚拟内存。
 
 /var/log 系统日志记录分区，如果设立了这一单独的分区，这样即使系统的日志文件出现了问题，它们也不会影响到操作系统的主分区。
 
-## Ubuntu分区小知识与分区方案
+## 【附】Ubuntu分区小知识与分区方案
 
 Most PC operating systems still work with an ancient disk partition scheme that historically makes distinction between primary and extended partitions. It also places a limitation for four primary partitions or three primary partitions and one extended partition. When present, an extended partition can then be divided into any number number of logical partitions.
 
@@ -250,15 +133,25 @@ swap(交换空间）：逻辑分区，大小设置为电脑内存大小，功能
 挂载点：/home：ext4日志文件系统，逻辑分区，将剩余空间都留给它（比如100G中80G）
 安装启动引导器的设备：选择整个硬盘。
 
-## 在vscode 编辑器中，可以使用快捷键 跳转到指定的行数
+## 【附】ubuntu16.04优化/boot分区空间
 
-快捷键： Ctrl + G ,然后在弹出的框中输入行数就可以了；
-上下移动一行： Alt+Up 或 Alt+Down
-向上向下复制一行： Shift+Alt+Up 或 Shift+Alt+Down
-在当前行下边插入一行 Ctrl+Enter
-在当前行上方插入一行 Ctrl+Shift+Enter
-移动到文件结尾： Ctrl+End
-移动到文件开头： Ctrl+Home
-选择从光标到行尾： Shift+End
-选择从行首到光标处： Shift+Home
-删除光标右侧的所有字： Ctrl+Delete
+1. 先可了解boot分区使用情况。
+使用"系统监视器"
+或者
+输入"df -h"命令
+2. 查看但前所有的linux内核版本。
+输入命令"sudo apt-get autoremove linux-image-"接着`按两下tab`。
+解释：linux内核文件名称是以"linux-image-"开头的，连按两下tab就会出现多选列表，即展示当前多有的linux内核版本。
+或者使用"dpkg --get-selections | grep linux-image"命令，查看已安装的软件，管道grep过滤
+3. 查看当前使用的linux版本。
+"uname -a"
+4. 卸载其他低版本(一般当前版本为最高版本，故只留一个最高版本，如果空间够你也可以留最高的两个版本保险)。
+卸载命令(注意了解下面apt-get的三种卸载方式区别，`推荐用第三种`)：
+sudo apt-get remove 文件名称
+sudo apt-get autoremove 文件名称
+sudo apt-get purge 文件名称
+5. 删除卸载不完全的文件
+sudo apt-get autoremove
+![](https://img2018.cnblogs.com/blog/1588269/201902/1588269-20190212222418339-1916228852.png)
+6. 对于后面有提示 deinstall 的条目，可以通过如下命令删除：
+$ sudo dpkg -P linux-image-extra-4.8.0-36-generic
