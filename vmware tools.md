@@ -21,7 +21,8 @@
     #解压之后多出 vmware-tools-distrib这个文件夹，进去
 10.  ./vmware-install.pl #安装(.pl是perl文件)
 【PS】如果前面没有提升权限，这里就要用`sudo su`(sudo su当前目录不变)或`sudo ./vmware-install.pl`运行
-显示信息有好多(摘取一句)，一路Enter确认。
+
+显示信息有好多(摘取一句)，`一路Enter确认`
 <center>
 <img src="https://img2018.cnblogs.com/blog/1588269/201902/1588269-20190213181247466-1289220161.jpg" width="100%" />
 </center>
