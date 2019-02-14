@@ -117,7 +117,7 @@ export PATH=$PATH:/xxx/xxx //将需配置路径加入$PATH  `等号两边一定�
 有效期限：临时改变，只能在当前的终端窗口中有效，当前窗口关闭后就会恢复原有的path配置
 用户局限：仅对当前用户
 2. 通过修改.bashrc文件：(.bashrc文件在根目录下)
-vi .bashrc  //编辑.bashrc文件
+vi .bashrc//编辑.bashrc文件
 //在最后一行添上：
 export PATH=$PATH:/xxx/xxx  ///xxx/xxx位需要加入的环境变量地址 等号两边没空格
 生效方法：（有以下两种）

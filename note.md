@@ -1,5 +1,20 @@
 # 以下文档为分类笔记
 
+## vscode中设置工作区隐藏文件或文件夹
+
+语法：
+<left>
+<img src="https://img2018.cnblogs.com/blog/1588269/201902/1588269-20190214112630906-574567917.jpg" width="80%" />
+</left>
+进入User Settings页面搜索files.exclude
+<left>
+<img src="https://img2018.cnblogs.com/blog/1588269/201902/1588269-20190214112705054-1561790686.jpg" width="80%" />
+</left>
+对比：
+<left>
+<img src="https://img2018.cnblogs.com/blog/1588269/201902/1588269-20190214112720814-4969050.jpg" width="80%" />
+</left>
+
 ## 图片居中时，行首必须加空格
 
  <div align=center>![这里行首必须加空格](https://img2018.cnblogs.com/blog/1588269/201902/1588269-20190202161358692-1895602837.png)</div>
