@@ -7,7 +7,7 @@
             "label": "hell vs code",
             "type": "shell",
              //"command":"D:\\Python27\\python.exe", 
-            "command": "python",
+            "command": "/user/bin/env python",
              //"args": ["${file}"], //这种写法不能编译 
             "args": [
                 "${file}"

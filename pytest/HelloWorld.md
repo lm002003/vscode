@@ -77,3 +77,36 @@ Ctrl+Shift+P，输入语言(Language)，选择 配置语言(Configure Language)�
 
 重启VScode即可。
  如果想改回中文，就改为"locale":"zh-CN"或者删掉这个location.json文件。
+
+## python头文件
+
+`#!/usr/bin/python 和 #!/usr/bin/env python的区别`
+脚本语言第一行 作用：文件中代码用指定可执行程序运行
+`#!/usr/bin/Python  执行脚本时，调用/usr/bin下python解释器`
+`#!/usr/bin/env python  在环境设置中寻找python目录 (防止用户没有将python装在默认的/usr/bin路径里)`
+这两个语句只在Linux系统下生效，意思是当作为可执行文件运行时调用的解释器的位置。
+如果我们用普通运行模式例如(linux) ： python file_name.py 那么这个语句在此运行模式下无效。
+如果想让python程序像普通程序一样运行，例如：
+./file_name.py (文件要有可执行权限chmod + x file_name*.py)，
+那么这个语句就起作用了。
+`#!/usr/bin/env python`
+首先会到env设置里查找python的安装路径，再调用对应路径下的python解释器程序执行你的脚本。
+`#!/usr/bin/python`
+调用/usr/bin下的python解释器执行你的脚本，可移植性差。操作系统用户没有将python装在默认的/usr/bin路径里，就会报错。
+`很明显推荐#!/usr/bin/env python这种写法。`
+
+win下py代码，头文件是`#-*-encoding:utf-8-*-`，是告诉python解释器, 应该以utf-8编码来解释py文件, 对于python 2.6/2.7, 如果程序中包含中文字符, 又没有这一行, 运行将会报错. 但python3.1没有这行, 也会成功运行的。
+linux下，头文件需要写#! /usr/bin/env python。
+加上这行, 这个py就处于了可执行模式下, (当然是针对linux类的操作系统), 这个hint, 告诉操作系统要使用哪个python解释器来执行这个py. 在linux上执行一下命令 /usr/bin/env python ,就知道这行其实是call一下python解释器.
+
+上述格式还可以写成：
+`#coding=utf-8`或`#coding:utf-8`
+
+<hr style="height:3px;border:none;border-top:3px dashed red;" />
+
+`#! /usr/bin/env python`(此处#和！之间无空格-`#后的空格表示注释的开始`)
+`# -*- coding: utf-8 -*-`
+第一行,加上这行,这个py就处于了可执行模式下,(当然是针对linux类的操作系统),这个hint,告诉操作系统要使用哪个python解释器来执行这个py.在linux上执行一下命令/usr/bin/env python,就知道这行其实是call一下python解释器.这种写法比`#! /usr/bin/python`要好, 后者是`hard coding`了python的路径.
+第二行, 是告诉python解释器, 应该以utf-8编码来解释py文件, 对于python 2.6/2.7, 如果程序中包含中文字符, 又没有这一行, 运行将会报错. 但python3.1没有这行, 也会成功运行的.
+## 通过ctrl+`，可以切换cmd和powershell
+

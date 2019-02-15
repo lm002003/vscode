@@ -1,7 +1,15 @@
-# -*- coding: UTF-8 -*-  
+# !/usr/bin/python
+# -*- coding: UTF-8 -*-
+'''
+@File    :   test.py
+@Time    :   2019/02/15 08:13:51
+@Author  :   John Ederson 
+@Version :   1.0
+@Contact :   lm002003@163.com
+@License :   (C)Copyright 2018-2019, Liugroup-NLPR-CASIA
+@Desc    :   None
+'''
 
-import math
-
-for i in [1,2,3,4,5]
-print(i)
-print(math.pow(3, 2))
+import os
+print(os.getcwd())
+print("你好，python!")
