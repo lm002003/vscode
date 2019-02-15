@@ -109,4 +109,3 @@ linux下，头文件需要写#! /usr/bin/env python。
 第一行,加上这行,这个py就处于了可执行模式下,(当然是针对linux类的操作系统),这个hint,告诉操作系统要使用哪个python解释器来执行这个py.在linux上执行一下命令/usr/bin/env python,就知道这行其实是call一下python解释器.这种写法比`#! /usr/bin/python`要好, 后者是`hard coding`了python的路径.
 第二行, 是告诉python解释器, 应该以utf-8编码来解释py文件, 对于python 2.6/2.7, 如果程序中包含中文字符, 又没有这一行, 运行将会报错. 但python3.1没有这行, 也会成功运行的.
 ## 通过ctrl+`，可以切换cmd和powershell
-

@@ -1,4 +1,5 @@
-# !/usr/bin/python
+
+#!/usr/bin/env python
 # -*- coding: UTF-8 -*-
 '''
 @File    :   test.py
@@ -13,3 +14,4 @@
 import os
 print(os.getcwd())
 print("你好，python!")
+print(os.getpid())

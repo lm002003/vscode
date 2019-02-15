@@ -12,9 +12,3 @@
 
 1、`有序列表`无法正常显示，后来全部改成了`无效列表`
 2、第二个H2目录，使用`## `时，始终中间对其，后来改成了`<H2 align="left">Ubuntu 18.04.1 LTS server安装</H2>`
-
-## python头文件
-
-`#! /usr/bin/env python`
-`# -*- coding: utf-8 -*-`
-在python语言中`#.`是注释的意思，注意其后的空格，而语句`#! /usr/bin/env python`中`没有空格`！
