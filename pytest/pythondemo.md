@@ -10,6 +10,7 @@
 
 ### code-runner插件运行python莫名其妙的错误
 
+`问题应该出再"!"上了,联想vim命令行:!python %这是调用python出现的意思`
 <left>
 <img src="https://img2018.cnblogs.com/blog/1588269/201902/1588269-20190215221102188-1622530965.jpg" width="80%" />
 </left>
