@@ -17,7 +17,9 @@
 
 ## 图片居中时，行首必须加空格
 
- <div align=center>![这里行首必须加空格](https://img2018.cnblogs.com/blog/1588269/201902/1588269-20190202161358692-1895602837.png)</div>
+<left>
+<img src="https://img2018.cnblogs.com/blog/1588269/201902/1588269-20190202161358692-1895602837.png" with=20%)
+</left>
 
 ## CMD中退出python的命令
 

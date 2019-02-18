@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>声明式触发手风琴</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <style>
+        body {
+            padding: 10px;
+            margin: 10px
+        }
+    </style>
+</head>
+
+<body>
+    <!--触发手风琴可以通过自定义的 data-toggle 属性来触发。其中data-toggle值设置为 collapse，data-target="#折叠区标识符"-->
+    <div class="panel-group" id="myAccordion">
+        <div class="panel panel-accordion panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <!--定义data-parent属性，实现点击一个其中一个元素时，关闭所有的折叠区，再打开所单击的区域（如果所单击区域是展示的，则会关闭）-->
+                    <a href="#panel1" data-toggle="collapse" data-target="#panel1" data-parent="#myAccordion">标题一</a>
+                </h4>
+            </div>
+            <!--在Bootstrap框架中，如果你想让内容区域不可视，只需要在 panel-collapse 样式上添加 collapse-->
+            <div class="panel-collapse collapse in" id="panel1">
+                <!--in初始选定状态-->
+                <div class="panel-body">折叠区内容</div>
+            </div>
+        </div>
+        <div class="panel panel-accordion panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <!--为了把标题和内容区捆绑在一起，可以通过锚链接的方法，把标题区域和面板区连在一起-->
+                    <a href="#panel2" data-toggle="collapse" data-target="#panel2" data-parent="#myAccordion">标题二</a>
+                    <!--a标签可以省去data-target，因为href中已经声明，button就必须使用data-target自定义标签了-->
+                </h4>
+            </div>
+            <div class="panel-collapse collapse" id="panel2">
+                <div class="panel-body">折叠区内容</div>
+            </div>
+        </div>
+        <div class="panel panel-accordion panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="#panel3" data-toggle="collapse" data-target="#panel3" data-parent="#myAccordion">标题三</a>
+                </h4>
+            </div>
+            <div class="panel-collapse collapse" id="panel3">
+                <div class="panel-body">折叠区内容</div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
