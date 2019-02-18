@@ -1,0 +1,49 @@
+<div class="cnblogs_code" onclick="cnblogs_code_show('30effa93-618f-418f-a712-b53ae7ce76f2')"><img id="code_img_closed_30effa93-618f-418f-a712-b53ae7ce76f2" class="code_img_closed" src="https://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" alt="" style="display: inline;"><img id="code_img_opened_30effa93-618f-418f-a712-b53ae7ce76f2" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide('30effa93-618f-418f-a712-b53ae7ce76f2',event)" src="https://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" alt="">
+<div id="cnblogs_code_open_30effa93-618f-418f-a712-b53ae7ce76f2" class="cnblogs_code_hide" style="display: none;">
+
+<div class="cnblogs_Highlighter sh-gutter">
+<div><div id="highlighter_522185" class="syntaxhighlighter  python">
+<div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div>
+<table border="0" cellpadding="0" cellspacing="0"><tbody><tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+<div class="line number3 index2 alt2">3</div>
+<div class="line number4 index3 alt1">4</div>
+<div class="line number5 index4 alt2">5</div>
+</td>
+<td class="code"><div class="container">
+
+<div class="line number1 index0 alt2"><code class="python comments"># -*- coding: UTF-8 -*-</code></div>
+
+<div class="line number2 index1 alt1"><code class="python plain">l1 </code>
+									  <code class="python keyword">=</code>
+									  <code class="python plain">[</code>
+									  <code class="python value">1</code>
+									  <code class="python plain">,</code>
+									  <code class="python value">2</code>
+									  <code class="python plain">,</code>
+									  <code class="python value">3</code>
+									  <code class="python plain">]</code></div>
+
+<div class="line number3 index2 alt2"><code class="python plain">l2 </code>
+									  <code class="python keyword">=</code>
+									  <code class="python plain">[</code>
+									  <code class="python value">4</code>
+									  <code class="python plain">,</code>
+									  <code class="python value">5</code>
+									  <code class="python plain">,</code>
+									  <code class="python value">6</code>
+									  <code class="python plain">]</code></div>
+
+<div class="line number4 index3 alt1"><code class="python plain">l1.append(l2)</code></div>
+
+<div class="line number5 index4 alt2"><code class="python functions">print</code>
+									  <code class="python plain">l1</code></div>
+
+</div></td></tr></tbody></table></div></div>
+</div>
+
+
+</div>
+<span class="cnblogs_code_collapse" style="display: inline;">View CODE </span></div>

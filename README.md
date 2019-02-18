@@ -25,7 +25,7 @@
 
 > syntaxhighlighter功能太强大了，支持的语法包括applescript,as3, base, bash, coldfusion, cpp,csharp, css, delphi, diff, erlang, groovy,haxe, java, javafx, javascript, perl,php, plain, powershell, python, ruby,sass, scala, sql, swift, tap, typescript,vb, xml等31种，几乎涵盖了流行的所有编程语言，实在是代码讲解的必备利器。
 
-<font size=5 color="#dd0000"><u>强调:插入xml代码时需要将"<"替换成`"&lt;"`</u></font>
+<font size=5 color="#dd0000"><u>强调:插入xml代码时需要将"<"替换成`&lt;`</u></font>
 > [**博客园代码高亮-行方思远-博客园**](https://www.cnblogs.com/ricksteves/p/9764228.html)
 
 <left>
@@ -34,6 +34,29 @@
 <left>
 <img src="https://img2018.cnblogs.com/blog/1588269/201902/1588269-20190218103048521-1457083152.png" width="60%" />
 </left>
+
+## 可折叠的带行号的代码块
+
+<div class="cnblogs_code" onclick="cnblogs_code_show('30effa93-618f-418f-a712-b53ae7ce76f2')">
+<img id="code_img_closed_30effa93-618f-418f-a712-b53ae7ce76f2" class="code_img_closed" 
+src="https://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" alt="">
+<img id="code_img_opened_30effa93-618f-418f-a712-b53ae7ce76f2" class="code_img_opened" 
+style="display: none;" onclick="cnblogs_code_hide('30effa93-618f-418f-a712-b53ae7ce76f2',event)" 
+src="https://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" alt="">
+<div id="cnblogs_code_open_30effa93-618f-418f-a712-b53ae7ce76f2" class="cnblogs_code_hide">
+<div class="cnblogs_Highlighter">
+<pre class="brush:python;gutter:true;">
+# -*- coding: UTF-8 -*-
+l1 = [1,2,3]
+l2 = [4,5,6]
+l1.append(l2)
+print l1
+</pre>
+</div>
+</div>
+<span class="cnblogs_code_collapse">View Code </span></div>
+
+(所有 '<' 都用VSCode 替换成 `&lt;`  否则 <script>等片段会被浏览器识别成标签)
 
 ## 锚点
 
@@ -53,11 +76,12 @@
 H1,h2,h3,h4{font-size:12px; font-weight:normal}
 
 `<u>**用flow表示**</u>`
-**`mermaid`**
-`<h2 aligh:right>我的测试</h2>`
+`**`mermaid`**`
+`<h2 aligh="right">我的测试</h2>`
 * <p align="left"><font color=red>这里强调一下虚拟机存放目录的问题：</font></p>
 `<H2 align="left">Ubuntu 18.04.1 LTS server安装</H2>`
 
+***
 【强调】
 1、`有序列表`无法正常显示，后来全部改成了`无效列表`
 2、第二个H2目录，使用`## `时，始终中间对其，后来改成了`<H2 align="left">Ubuntu 18.04.1 LTS server安装</H2>`（[#021801](#021801)）
