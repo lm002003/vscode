@@ -1,0 +1,36 @@
+<center><img src="http://images.cnblogs.com/cnblogs_com/gitwow/1393973/o_python.png" alt="LM头像" class="img_avatar" width="30%" style="border-radius:50%"></center>
+
+<!-- 为博客底部添加音乐组件 -->
+<div id="player"  class="aplayer"></div>
+<link href="https://files.cnblogs.com/files/gitwow/APlayer.min_v1.10.1.css" rel="stylesheet">
+<script src="https://files.cnblogs.com/files/gitwow/APlayer.min_v1.10.1.js"></script>
+
+<script type="text/javascript">
+var ap = new APlayer({
+    element: document.getElementById('player'),
+    narrow: false,
+    autoplay: true,          <!-- 是否自动播放 -->
+    showlrc: false,
+    theme: '#fff',      <!-- 插件背景颜色，建议和你的公告栏背景色一样，这样融为一体的感觉 -->
+    music: [{
+            title: 'music 1',
+            author: 'Valentin',
+            url: 'https://files.cnblogs.com/files/shwee/Valentin-A_Little_Story.pdf',
+            pic: 'http://images.cnblogs.com/cnblogs_com/gitwow/1393973/o_music_pic4.png'
+        },
+        {
+            title: 'music 2',
+            author: '林海',
+            url: 'https://files.cnblogs.com/files/shwee/%E6%9E%97%E6%B5%B7-%E7%90%B5%E7%90%B6%E8%AF%AD.pdf',
+            pic: 'http://images.cnblogs.com/cnblogs_com/gitwow/1393973/o_music_pic1.png'
+        },
+        {
+            title: 'music 3',
+            author: '赵海洋',
+            url: 'https://files.cnblogs.com/files/shwee/%E8%B5%B5%E6%B5%B7%E6%B4%8B-%E3%80%8A%E7%9E%AC%E9%97%B4%E7%9A%84%E6%B0%B8%E6%81%92%E3%80%8B%E5%A4%9C%E8%89%B2%E9%92%A2%E7%90%B4%E6%9B%B2.pdf',
+            pic: 'http://images.cnblogs.com/cnblogs_com/gitwow/1393973/o_music_pic2.png'
+        }
+    ]
+});
+ap.init();
+</script>

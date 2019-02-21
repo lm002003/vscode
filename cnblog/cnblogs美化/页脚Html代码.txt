@@ -1,0 +1,94 @@
+<script language="javascript" type="text/javascript">
+// 生成目录索引列表
+
+function GenerateContentList()
+{
+    var mainContent = $('#cnblogs_post_body');
+    var h2_list = $('#cnblogs_post_body h2');//如果你的章节标题不是h2,只需要将这里的h2换掉即可
+
+    if(mainContent.length < 1)
+        return;
+
+    if(h2_list.length>0)
+    {
+        var content = '<a name="_labelTop"></a>';
+        content += '<div id="navCategory" style="color:#152e97;">';
+        content += '<p style="font-size:18px;"><b style="margin-left: 6px">阅读目录</b></p>';
+        content += '<ul>';
+        for(var i=0; i<h2_list.length; i++)
+        {
+            var go_to_top = '<div style="text-align: right;"><a href="#_labelTop" style="color:#f68a33">回到顶部</a><a name="_label' + i + '"></a></div>';
+            $(h2_list[i]).before(go_to_top);
+
+           var h3_list = $(h2_list[i]).nextAll("h3");  
+       // 把“h9”换成“h3”即可正常渲染出 三级索引，此处我是故意不让它渲染出来，因为文章索引多了会显得目录杂乱不美观（跟个人需求改~）
+            var li3_content = '';
+            for(var j=0; j<h3_list.length; j++)
+            {
+                var tmp = $(h3_list[j]).prevAll('h2').first();
+                if(!tmp.is(h2_list[i]))
+                    break;
+                var li3_anchor = '<a name="_label' + i + '_' + j + '" style="text-decoration: none"></a>';
+                $(h3_list[j]).before(li3_anchor);
+                li3_content += '<li><a href="#_label' + i + '_' + j + '" style="text-decoration: none">' + $(h3_list[j]).text() + '</a></li>';
+            }
+
+            var li2_content = '';
+            if(li3_content.length > 0)
+                li2_content = '<li><a href="#_label' + i + '" style="text-decoration: none">' + $(h2_list[i]).text() + '</a><ul>' + li3_content + '</ul></li>';
+            else
+                li2_content = '<li><a href="#_label' + i + '" style="text-decoration: none">' + $(h2_list[i]).text() + '</a></li>';
+            content += li2_content;
+        }
+        content += '</ul>';
+        content += '</div><p>&nbsp;</p>';
+        content += '<hr style="height:1px;border:none;border-top:1px dashed #2b542c;"/>';
+        if($('#cnblogs_post_body').length != 0 )
+        {
+            $($('#cnblogs_post_body')[0]).prepend(content);
+        }
+    }
+}
+
+GenerateContentList();
+</script>
+
+<span style="font-size:14px"><p id="back-to-top"><a href="#_labelTop"><span></span></a></p></span>
+<!-- 回到页顶的代码(JS) -->
+<script src="http://ajax.microsoft.com/ajax/jQuery/jquery-1.7.2.min.js"></script>
+<script>
+$(function(){
+        //当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失
+        $(function () {
+            $(window).scroll(function(){
+                if ($(window).scrollTop()>100){
+                    $("#back-to-top").fadeIn(1500);
+                }
+                else
+                {
+                    $("#back-to-top").fadeOut(1500);
+                }
+            });
+
+            //当点击跳转链接后，回到页面顶部位置
+            $("#back-to-top").click(function(){
+                //$('body,html').animate({scrollTop:0},1000);
+        if ($('html').scrollTop()) {
+                $('html').animate({ scrollTop: 0 }, 1000);
+                return false;
+            }
+            $('body').animate({ scrollTop: 0 }, 1000);
+                 return false;            
+           });       
+     });    
+});
+</script>
+
+<!-- 代码高亮方案1 -->
+<script type="text/javascript" src="http://files.cnblogs.com/gitwow/lighter.js"></script>
+<script type="text/javascript"> 
+        SyntaxHighlighter.defaults['toolbar'] = true;
+        SyntaxHighlighter.defaults['collapse'] = true;
+        SyntaxHighlighter.defaults['pad-line-numbers'] = true;
+        dp.SyntaxHighlighter.HighlightAll('code');
+</script>
