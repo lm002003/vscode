@@ -119,7 +119,7 @@ var BlogDirectory = {
         divSideBar.appendChild(divSideBarTab);
         var h2 = document.createElement('H2');
         divSideBarTab.appendChild(h2);
-        var txt = document.createTextNode('目录表');
+        var txt = document.createTextNode('目录导航');
         h2.appendChild(txt);
         var divSideBarContents = document.createElement('DIV');
         divSideBarContents.style.display = 'none';
