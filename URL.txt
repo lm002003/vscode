@@ -12,3 +12,13 @@ Get Started Tutorial for Python in Visual Studio Code  https://code.visualstudio
 Extended Syntax | Markdown Guide  https://www.markdownguide.org/extended-syntax
 Markdown Basics - Markdown Preview Enhanced  https://shd101wyy.github.io/markdown-preview-enhanced/#/markdown-basics?id=fenced-code-block
 
+Git - 初次运行 Git 前的配置  https://git-scm.com/book/zh/v2/%E8%B5%B7%E6%AD%A5-%E5%88%9D%E6%AC%A1%E8%BF%90%E8%A1%8C-Git-%E5%89%8D%E7%9A%84%E9%85%8D%E7%BD%AE
+
+Markdown打造高逼格博客 - zweizhao - 博客园  https://www.cnblogs.com/ZweiZhao/p/9260114.html
+Markdown editing with Visual Studio Code  https://code.visualstudio.com/docs/languages/markdown
+
+How to display line number using github markdown "code"? - Stack Overflow  https://stackoverflow.com/questions/36122803/how-to-display-line-number-using-github-markdown-code
+
+Documentation for Visual Studio Code  https://code.visualstudio.com/docs?start=true
+
+几款Git GUI客户端工具 - 北京的201个蓝天 - 博客园  https://www.cnblogs.com/ups216/p/5603199.html
