@@ -22,3 +22,32 @@ How to display line number using github markdown "code"? - Stack Overflow  https
 Documentation for Visual Studio Code  https://code.visualstudio.com/docs?start=true
 
 几款Git GUI客户端工具 - 北京的201个蓝天 - 博客园  https://www.cnblogs.com/ups216/p/5603199.html
+
+
+
+
+hljs.initLineNumbersOnLoad();
+
+highlight.js扩展代码行号 - chlung - CSDN博客  https://blog.csdn.net/chlung/article/details/84563706
+
+改进博客园Markdown显示功能(加代码行号、显示代码所用编程语言)-新_ITPUB博客  http://cache.baiducontent.com/c?m=9d78d513d9d431a94f99e7697c16c011694381132ba7da0209a0843990732a42506692ac51200772d1d20c1416de4e4beb802104351456b58cb8825dabcf866f6fd6286e365ac45613a004b29b18789437902db2e95ba0eae732e4f28595c25458c053057f87f1961e5b438f2eb24760b4b1993e155b11bfee3a60e2&p=8772da5e95904ead40bd9b780d40&newp=882a93459d841cfc57efde0c154892695912c10e37ddc44324b9d71fd325001c1b69e3b823281603d4c6786c15e9241dbdb239256b556bf0c6&user=baidu&fm=sc&query=%B4%FA%C2%EB%B8%DF%C1%C1+%D0%D0%BA%C5%D0%D0%B8%DF&qid=a67d24a70001b67e&p1=96
+
+
+改进博客园Markdown显示功能(加代码行号、显示代码所用编程语言) - Enjoy233 - 博客园  https://www.cnblogs.com/enjoy233/p/10410089.html
+
+
+使用highlightjs自定义markdown代码高亮 - jumpingfrog0 - 博客园  https://www.cnblogs.com/frog112111/p/4458739.html
+
+使用prismjs实现Jekyll代码语法高亮并显示行号 - 誠者为皇 - CSDN博客  https://blog.csdn.net/u013961139/article/details/78853544
+
+prismjs 代码语法高亮插件 for Typecho 1.1，可显示语言类型、行号，有复制代码到剪切板功能 - Typecho开发者问答社区  http://asks.typechodev.com/question/1154
+
+js动态为代码着色显示行号_javascript技巧_脚本之家  https://www.jb51.net/article/37569.htm
+
+SyntaxHighlighter行号显示错误问题解决方案 - 王大胖的博客 - CSDN博客  https://blog.csdn.net/buaawp/article/details/51038675
+
+syntaxhighlighter 代码超长之后自动换行对齐  https://baijiahao.baidu.com/s?id=1565394238482052&wfr=spider&for=pc
+
+
+
+CSDN粘贴代码显示行号,并实现代码高亮 - 叫我吕小布 - CSDN博客  https://blog.csdn.net/qq_36769100/article/details/70170184
