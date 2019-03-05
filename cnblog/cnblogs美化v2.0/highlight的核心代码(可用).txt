@@ -1,0 +1,28 @@
+<link href="http://files.cnblogs.com/gitwow/shCore.css" rel="stylesheet" type="text/css" />
+<link href="http://files.cnblogs.com/gitwow/shThemeDefault.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://files.cnblogs.com/gitwow/shCore.js"></script>
+<script type="text/javascript" src="http://files.cnblogs.com/gitwow/shBrushJScript.js"></script>
+<script type="text/javascript" src="http://files.cnblogs.com/gitwow/shBrushPython.js"></script>
+<script type="text/javascript" src="http://files.cnblogs.com/gitwow/shBrushXml.js"></script>
+<script type="text/javascript" src="http://files.cnblogs.com/gitwow/shBrushVb.js"></script>
+<script type="text/javascript" src="http://files.cnblogs.com/gitwow/shBrushSql.js"></script>
+<script type="text/javascript" src="http://files.cnblogs.com/gitwow/shBrushJava.js"></script>
+<script type="text/javascript" src="http://files.cnblogs.com/gitwow/shBrushCss.js"></script>
+<script type="text/javascript" src="http://files.cnblogs.com/gitwow/shBrushBash.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['collapse'] = false;
+    SyntaxHighlighter.defaults['pad-line-numbers'] = true;
+    SyntaxHighlighter.all();
+</script>
+
+# 下面是行号的对齐代码
+
+<script>
+    $(window).load(function(){
+        $('.code .line').each(function(index){
+            var yqhg=$(this).height();
+            $('.gutter .line:eq('+index+')').attr('style','height:'+yqhg+'px !important')
+            $('.code .line:eq('+index+')').attr('style','height:'+yqhg+'px !important')
+        });
+    });
+</script>

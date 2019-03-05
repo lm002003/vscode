@@ -1,0 +1,39 @@
+<link type="text/css" rel="stylesheet" href="http://files.cnblogs.com/gitwow/shCore.css" />
+<link type="text/css" rel="Stylesheet" href="http://files.cnblogs.com/gitwow/shThemeDefault.css" />
+<script type="text/javascript" src="http://files.cnblogs.com/gitwow/shCore.js"></script>
+<script type="text/javascript" src="http://files.cnblogs.com/gitwow/shAutoloader.js"></script>
+<script type="text/javascript">
+SyntaxHighlighter.autoloader(
+	'applescript			http://files.cnblogs.com/gitwow/shBrushAppleScript.js',
+	'actionscript3 as3		http://files.cnblogs.com/gitwow/shBrushAS3.js',
+	'bash shell				http://files.cnblogs.com/gitwow/shBrushBash.js',
+	'coldfusion cf			http://files.cnblogs.com/gitwow/shBrushColdFusion.js',
+	'cpp c					http://files.cnblogs.com/gitwow/shBrushCpp.js',
+	'obj-c objc				http://files.cnblogs.com/gitwow/shBrushObjC.js',
+	'c# c-sharp csharp		http://files.cnblogs.com/gitwow/shBrushCSharp.js',
+	'css					http://files.cnblogs.com/gitwow/shBrushCss.js',
+	'delphi pascal			http://files.cnblogs.com/gitwow/shBrushDelphi.js',
+	'diff patch pas			http://files.cnblogs.com/gitwow/shBrushDiff.js',
+	'erl erlang				http://files.cnblogs.com/gitwow/shBrushErlang.js',
+	'groovy					http://files.cnblogs.com/gitwow/shBrushGroovy.js',
+	'haxe hx				http://files.cnblogs.com/gitwow/shBrushHaxe.js',
+	'java					http://files.cnblogs.com/gitwow/shBrushJava.js',
+	'jfx javafx				http://files.cnblogs.com/gitwow/shBrushJavaFX.js',
+	'js jscript javascript	http://files.cnblogs.com/gitwow/shBrushJScript.js',
+	'perl pl				http://files.cnblogs.com/gitwow/shBrushPerl.js',
+	'php					http://files.cnblogs.com/gitwow/shBrushPhp.js',
+	'text plain				http://files.cnblogs.com/gitwow/shBrushPlain.js',
+	'py python				http://files.cnblogs.com/gitwow/shBrushPython.js',
+	'ruby rails ror rb		http://files.cnblogs.com/gitwow/shBrushRuby.js',
+	'scala					http://files.cnblogs.com/gitwow/shBrushScala.js',
+	'sql					http://files.cnblogs.com/gitwow/shBrushSql.js',
+	'vb vbnet				http://files.cnblogs.com/gitwow/shBrushVb.js',
+	'ps powershell			http://files.cnblogs.com/gitwow/shBrushPowerShell.js',
+	'xml xhtml xslt html	http://files.cnblogs.com/gitwow/shBrushXml.js'
+);
+/*上面多出shBrushObjC.js、shBrushHaxe.js，少了文件列表中的shLegacy.js、shBrushSass.js*/
+SyntaxHighlighter.defaults['collapse'] = false;
+SyntaxHighlighter.defaults['pad-line-numbers'] = true;
+SyntaxHighlighter.all();
+});
+</javascript>

@@ -1,0 +1,401 @@
+/*1、针对simplememory的修改*/
+#google_ad_c1,
+#google_ad_c2 {
+    display: none;
+}
+
+#home {
+    opacity: 0.80;
+    margin: 0 auto;
+    width: 85%;
+    min-width: 950px;
+    background-color: #fff;
+    padding: 30px;
+    margin-top: 42px;
+    margin-bottom: 50px;
+    box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+    border-radius: 20px;
+}
+
+#blogTitle h1 {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Comic Sans MS";
+    line-height: 1.5em;
+    margin-top: 20px;
+    color: #515151;
+}
+
+#navList a:hover {
+    color: #4C9ED9;
+    text-decoration: none;
+}
+
+#navList a {
+    display: block;
+    width: 5em;
+    height: 22px;
+    float: left;
+    text-align: center;
+    padding-top: 18px;
+}
+
+#navigator {
+    font-size: 15px;
+    border-bottom: 1px solid #ededed;
+    border-top: 1px solid #ededed;
+    height: 50px;
+    clear: both;
+    margin-top: 25px;
+}
+
+.catListTitle {
+    margin-top: 21px;
+    margin-bottom: 10.5px;
+    text-align: left;
+    border-left: 10px solid rgba(82, 168, 236, 0.8);
+    padding: 10px 0 14px 10px;
+    background-color: #f5f5f5;
+}
+
+#ad_under_post_holder #google_ad_c1,
+#google_ad_c2 {
+    display: none !important;
+}
+
+body {
+    color: #000;
+    background: url(https://www.cnblogs.com/images/cnblogs_com/gitwow/1387714/o_192569101.jpg) fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: "Helvetica Neue", Helvetica, Verdana, Arial, sans-serif;
+    font-size: 12px;
+    min-height: 101%;
+}
+
+#topics .postTitle {
+    border: 0px;
+    font-size: 200%;
+    font-weight: bold;
+    float: left;
+    line-height: 1.5;
+    width: 100%;
+    padding-left: 5px;
+}
+
+div.commentform p {
+    margin-bottom: 10px;
+}
+
+.comment_btn {
+    padding: 5px 10px;
+    height: 35px;
+    width: 90px;
+    border: 0 none;
+    border-radius: 5px;
+    background: #ddd;
+    color: #999;
+    cursor: pointer;
+    font-family: "Lato", Helvetica Neue, Helvetica, Microsoft Yahei, 宋体, Arial, sans-serif;
+    text-shadow: 0 0 1px #fff;
+    display: inline !important;
+}
+
+.comment_btn:hover {
+    padding: 5px 10px;
+    height: 35px;
+    width: 90px;
+    border: 0 none;
+    border-radius: 5px;
+    background: #258fb8;
+    color: white;
+    cursor: pointer;
+    font-family: "Lato", Helvetica Neue, Helvetica, Microsoft Yahei, 宋体, Arial, sans-serif;
+    text-shadow: 0 0 1px #fff;
+    display: inline !important;
+}
+
+#commentform_title {
+    background-image: none;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+    padding: 0;
+    font-size: 24px;
+}
+
+#commentbox_opt,
+#commentbox_opt+p {
+    text-align: center;
+}
+
+.commentbox_title {
+    width: 100%;
+}
+
+#tbCommentBody {
+    font-family: 'Microsoft Yahei', Microsoft Yahei, 宋体, sans-serif;
+    margin-top: 10px;
+    max-width: 100%;
+    min-width: 100%;
+    background: white;
+    color: #333;
+    border: 2px solid #fff;
+    box-shadow: inset 0 0 8px #aaa;
+    // padding:10px;
+    height: 250px;
+    font-size: 14px;
+    min-height: 120px;
+}
+
+.feedbackItem {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 10px 0;
+    padding: 20px;
+    background: #F2F2F2;
+    box-shadow: 0 0 5px #aaa;
+}
+
+.feedbackListSubtitle {
+    font-weight: normal;
+}
+
+#blog-comments-placeholder,
+#comment_form {
+    padding: 20px;
+    background: #fff;
+    -webkit-box-shadow: 1px 2px 3px #ddd;
+    box-shadow: 1px 2px 3px #ddd;
+    margin-bottom: 50px;
+}
+
+.feedback_area_title {
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+
+.feedbackItem {
+    border-bottom: 1px solid #CCC;
+    margin-bottom: 10px;
+    padding: 5px;
+    background: rgb(248, 248, 248);
+}
+
+.color_shine {
+    background: rgb(226, 242, 255);
+}
+
+.feedbackItem:hover {
+    -webkit-animation-name: color_shine;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+#comment_form .title {
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+//DIY修改================================================================
+#cnblogs_post_body h1 {
+    background: #2B6695;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 0 0 1px #5F5A4B, 1px 1px 6px 1px rgba(10, 10, 0, 0.5);
+    color: #FFFFFF;
+    font-family: "微软雅黑", "宋体", "黑体", Arial;
+    font-size: 17px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin: 18px 0 !important;
+    padding: 8px 0 5px 5px;
+    text-shadow: 2px 2px 3px #222222;
+}
+
+#cnblogs_post_body h2 {
+    background: #21759b;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 0 0 1px #5F5A4B, 1px 1px 6px 1px rgba(10, 10, 0, 0.5);
+    color: #FFFFFF;
+    font-family: "微软雅黑", "宋体", "黑体", Arial;
+    font-size: 13px;
+    font-weight: bold;
+    height: 24px;
+    line-height: 23px;
+    margin: 12px 0 !important;
+    padding: 5px 0 5px 10px;
+    text-shadow: 2px 2px 3px #222222;
+}
+
+#cnblogs_post_body h3    {
+    background-color: #21759b;
+    border-left: 10px solid #FF9900;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 0 1px #5F5A4B, 1px 1px 6px 1px rgba(10, 10, 0, 0.5);
+    margin-top: 0px;
+    color: #FFFFFF;
+    a:link {color:#FF0000;}	
+    font-family: "微软雅黑" , "宋体" , "黑体" ,Arial;
+    font-size: 13px;
+    margin: 5px 0 !important;
+    padding: 2px 0px 2px 10px;
+}
+
+/*去掉广告*/
+div[id^="ad_"] {
+    display: none;
+}
+
+div[class^="c_ad"] {
+    display: none;
+}
+
+div[id^="under_post"] {
+    display: none;
+}
+
+#ad_t2,
+#opt_under_post,
+.c_ad_block,
+#under_post_news,
+#under_post_kb {
+    display: none !important;
+}
+
+/*lm:博客园页面添加返回顶部TOP按钮*/
+#back-to-top {
+    background: transparent url(http://images.cnblogs.com/cnblogs_com/gitwow/1393973/o_o_o_toTop.png) no-repeat -70px top;
+    width: 57px;
+    height: 57px;
+    overflow: hidden;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    cursor: pointer;
+}
+
+/*lm：生成博客目录的CSS:https://www.cnblogs.com/xdp-gacl/p/3718879.html-------------------------------------------------------*/
+#uprightsideBar {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    position: fixed;
+    /*将div的位置固定到距离top:50px，right:0px的位置，这样div就会处在最右边的位置，距离顶部50px*/
+    top: 200px;
+    right: 0px;
+    width: auto;
+    height: auto;
+}
+
+#uprightsideBarTab {
+    float: left;
+    width: 30px;
+    border: 0px solid yellow; //默认值#e5e5e5
+    border-right: none;
+    text-align: left;
+    /*background:yellow;//默认值#ffffff*/
+}
+
+#uprightsideBarContents {
+    float: left;
+    overflow: auto;
+    overflow-x: hidden;!important;
+    min-height: 108px;
+    max-height: 460px;
+    border: 2px dashed #21759b;
+    border-right: none;
+    border-left: none;
+    background: #ccc;
+    opacity: 0.8;
+
+}
+
+#uprightsideBarContents dl {
+    margin: 0;
+    padding: 0;
+}
+
+#uprightsideBarContents dt {
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#uprightsideBarContents dd,
+dt {
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+#uprightsideBarContents dd:hover,
+dt:hover {
+    color: green; //默认值#A7995A
+}
+
+#uprightsideBarTab h2 {
+    border-radius: 6px 0px 0px 6px;
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.075), 0px 0px 0px 0px #ff1493;
+    color: #FFFFFF;
+    font-family: "微软雅黑", "宋体", "黑体", Arial;
+    font-size: 18px;
+    font-weight: bold;
+    color: yellow;
+    text: left;
+    line-height: 23px;
+    margin: 0px 0 !important;
+    padding: 5px 0 5px 10px;
+    text-shadow: 2px 2px 3px #ff1493;
+
+}
+
+/*lm:博客园随笔添加自己的版权信息------------------------------------------------------------------------------------------*/
+#MySignature {
+    border: dashed 1px #E5E5E5;
+    padding: 10px;
+    background: #FFFEFE url(http://images.cnblogs.com/cnblogs_com/gitwow/1393973/o_info.png) no-repeat scroll 15px 50%;
+    padding-top: 0px;
+    padding-left: 80px;
+}
+
+#MySignature div {
+    line-height: 25px;
+}
+/* 定制公告栏音乐插件的样式-------------------------------------------------------------------------------------------------- */
+.aplayer {
+    font-family: Arial, Helvetica, sans-serif;
+    /*音乐插件字体*/
+    margin: 0px;
+    /*音乐插件与公告栏左边的边距，0px就是直接抵到公告栏左边的边上*/
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    border-radius: 2px;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    line-height: normal;
+}
+
+.aplayer-list-cur{display:none !important;}
+
+/*代码块之code列不换行设置*/
+/*.syntaxhighlighter code{white-space: pre !important;}*/
+
+/*本来锚点格式是<a id=“1”>，但给###三级目录设锚点时，被背景色挡了，用<h3 id=“1”>也不行，博客园默认有自己的目录ID:blogTitle*/
+a{
+    display:inline;/*默认。此元素会被显示为内联元素，元素前后没有换行符。*/
+    text-decoration:none;
+    /*font-size:14px;*/
+    color:#FF9900;
+    /*background-color:#000066;*/
+    /*border-left-width:10px;*/
+    /*border-left-style:solid;*/
+    /*border-left-color:#ff9900*/
+}
+/*a:link{color:#FF9900!important}*/
+
+/*代码超长之后自动换行对齐*/
+body .syntaxhighlighter .container .line{
+	white-space: pre-wrap !important;
+	word-wrap: break-word!important;
+	word-break: break-all!important;
+}
