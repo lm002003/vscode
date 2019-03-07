@@ -10,16 +10,8 @@
 @License :   (C)Copyright 2018-2019, Liugroup-NLPR-CASIA
 @Desc    :   None
 '''
+
 import sys
-# here put the import lib
-# print("python:",sys.version)
-# print("hello python")
-# print('hello c++')
-a_dict = {'Name': 'Zara', 'Age': 7, 'Class': 'First'}
+import os
+from math import sqrt
 
-raw="Do you love Canglaoshi? Canglaoshi is a good teacher."
-raw_list=raw.split(" ")
-
-squares=[x**2 for x in range(1,10)]
-print(list(enumerate(raw_list)))
-print(squares)
