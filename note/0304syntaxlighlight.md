@@ -48,4 +48,10 @@ xuexiao: xi
 b=re.search(r"(?<=shuju:).+?(?=$)",a,re.M)
 print(b.group(0))
 </pre>
+![](https://img2018.cnblogs.com/blog/1588269/201903/1588269-20190308180051817-210442659.png)
 
+## VSCode 安装pep8
+
+![](https://img2018.cnblogs.com/blog/1588269/201903/1588269-20190308180227800-1103525179.png)
+![](https://img2018.cnblogs.com/blog/1588269/201903/1588269-20190308180232388-1094506352.png)
+![](https://img2018.cnblogs.com/blog/1588269/201903/1588269-20190308180236691-1242380982.png)
