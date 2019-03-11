@@ -1,5 +1,3 @@
-
-#!/usr/bin/env python
 # -*- encoding: utf-8 -*-
 '''
 @File    :   test.py
@@ -11,7 +9,24 @@
 @Desc    :   None
 '''
 
-import sys
 import os
-from math import sqrt
+import io
 
+# print(os.getcwd())
+
+# os.chdir("pytest")  # （表示当前目录时，也可以去掉“./”，直接写文件名或者下级目录）---【中文注释需要在文件`首行`注明编码】
+# print(os.getcwd())
+# fi = open("demo.py")  # 单引号或双引号【print函数、块注释中单双引号都可以】
+# fl = open("d:\shiyan.py")
+fl = open("d:\\shiyan.py")
+# help(io.TextIOWrapper)
+# print(dir(__builtins__))
+print(fl)
+# print("this is my first program")
+# while True:
+#     line = fl.readline()
+#     n= 1
+#     print("------------",n+1)
+#     print(line)
+
+print(type(fl.readline()))
