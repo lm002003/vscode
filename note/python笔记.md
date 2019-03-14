@@ -14,6 +14,7 @@ help(round)
 print(list(range(9))),需要使用list()才可以输出range()
 
 ### 为什么open得到的io.TextIOWrapper 这个数据类型可以用在for 循环
+
 <pre class="brush:python;">
 >>> f=open('1.txt')
 >>> from collections import Iterator
@@ -37,97 +38,12 @@ Python implementation of the io module.
 
 ### python3.7--内建函数
 
-### Python 文件读写 文件和路径
-
-1、在Windows上，使用倒斜杆作为文件夹之间的分隔符，在Linux上，使用正斜杠作为路径分隔符。在编写Python脚本时，可以os.path.join()函数来处理
-在Windows环境下命令如下，返回的路径为倒斜杆，倒斜杆有两个，是因为加了转义字符
-<pre class="brush:python;">
->>> import os
->>> os.path.join('usr','bin','pigwan7')
-'usr\\bin\\pigwan7'
-</pre>
-在Linux环境下命令，返回的路径为正斜杠
-<pre class="brush:py;">
->>> import os
->>> os.path.join('usr','bin','pigwan7')
-'usr/bin/pigwan7'
-</pre>
-2、获得当前路径和改变工作路径
-<pre class="brush:python;">
->>> import os
->>> os.chdir('/usr/bin')
->>> os.getcwd()
-'/usr/bin'
->>> os.chdir('/root')
->>> os.getcwd()
-'/root'
-</pre>
-3、创建新文件夹
-
-<pre class="brush:python;">
->>> os.makedirs('/home/xiaobai/study')
->>> os.chdir('/home/xiaobai/study')
->>> os.getcwd()
-'/home/xiaobai/study'
-</pre>
- 4、相对路径和绝对路径
-os.path.abspath(path)返回参数的绝对路径的字符串，os.path.isabs(path)，返回一个布尔值，判断是否是相对路径
-<pre class="brush:python;">
->>> os.path.abspath('.')
-'/home/xiaobai/study'
->>> os.path.isabs('.')
-False
-</pre>
-os.path.dirname(path)返回一个字符串，包含path参数中最后一个斜杠之前的所有内容；os.path.basename(path)将返回path参数中最后一个斜杠之后的所有内容
-<pre class="brush:python;">
->>> os.path.dirname('/home/xiaobai/study/test.txt')
-'/home/xiaobai/study'
->>> os.path.basename('/home/xiaobai/study/test.txt')
-'test.txt'
-</pre>
-os.path.split()返回两个字符串的元组，包含路径的目录名称和基本名称
-<pre class="brush:python;">
->>> os.path.split('/home/xiaobai/study/test.txt')
-('/home/xiaobai/study', 'test.txt')
-</pre>
-查看文件大小和文件夹内容
-os.path.getsize(path)返回path参数中文件的字节数，下面这个例子中的文件大小为51200字节
-<pre class="brush:python;">
->>> os.path.getsize('/home/xiaobai/study/test.txt')
-51200
-</pre>
-os.listdir(path)返回path参数中文件名的字符串列表，/home/xiaobai/study目录下共有3个文件
-<pre class="brush:python;">
-[root@client01 study]# 
-[root@client01 study]# pwd
-/home/xiaobai/study
-[root@client01 study]# ll
-total 156
--rw-r--r--. 1 root root 51200 Nov 17 01:28 test1.txt
--rw-r--r--. 1 root root 51200 Nov 17 01:28 test2.txt
--rw-r--r--. 1 root root 51200 Nov 17 01:24 test.txt
-[root@client01 study]#
->>> os.listdir('/home/xiaobai/study/')
-['test.txt', 'test1.txt', 'test2.txt']
-</pre>
-利用os.path.getsize(path)和os.listdir()可以计算文件夹下所有文件的大小
-<pre class="brush:python;">
->>> totalSize=0
->>> for filename in os.listdir('/home/xiaobai/study/'):
-... totalSize=totalSize + os.path.getsize(os.path.join('/home/xiaobai/study/',filename))
-... 
->>> print(totalSize)
-153600
-</pre>
-5、检测路径有效性
-<pre class="brush:python;">
->>> os.path.exists('/home/xiaobai')
-True
->>> os.path.isdir('/home/xiaobai')
-True
->>> os.path.isfile('/home/xiaobai')
-False
-</pre>
+打开 Python IDLE，我用的 是 Python 3.7
+输入 dir(__builtins__)
+也可以：
+import builtins
+dir(builtins)
+得到的结果和 dir(__builtins__) 是一样的。
 
 ### Python 3.x标准模块库目录
 
