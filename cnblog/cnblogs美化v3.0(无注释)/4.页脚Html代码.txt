@@ -1,0 +1,110 @@
+<!--
+<script>
+    function CreatePostNavigator() {
+        // 目录标题的div
+        var navigatorTitleDiv = '<div id="navigatorTitleDiv" '+'class="button button-caution button-circle button-jumbo"></div>';
+        // 目录所有内容的div
+        var navigatorDivContent = '<div id="navigatorDiv">';
+
+        if ($("#cnblogs_post_body :header").length == 0) {
+            return;
+        }
+
+        $.each($("#cnblogs_post_body :header"), function(i, val) {
+            // 查找所有的header（h1-h4），并生成header条目，并添加属性class=“dt_h?”
+            var headerTagName = $(val)[0].tagName.toLowerCase();
+            var navigatorItem = '<dt class="dt_' + headerTagName + '"><a href="#_nav_' + i + '">' + $(val).text() + '</a></dt>';
+            // 把header条目加入navigatorDiv
+            navigatorDivContent += navigatorItem;
+
+            // 给页面上每个header元素之前添加一个跳转标签
+            var headerLabel = '<a name="_nav_' + i + '" style="padding:0px"></a>';
+            $(val).prepend(headerLabel);
+        });
+
+        navigatorDivContent += '</div>';
+
+        $('#cnblogs_post_body').prepend(navigatorDivContent);
+        $('#cnblogs_post_body').prepend(navigatorTitleDiv);
+
+        var headerList = ["h1", "h2", "h3", "h4"];
+        var headerListLen = headerList.length;
+        // 遍历所有的header，然后给小一级的header设置缩进
+        for (var i = 0; i < headerListLen; i++) {
+                if (i == 0) {
+                    $(".dt_" + headerList[i]).prepend("??");
+                }else if (i == 1) {
+                    $(".dt_" + headerList[i]).prepend("??");
+                } else if (i == 2) {
+                    $(".dt_" + headerList[i]).prepend("??");
+                } else if (i == 3) {
+                    $(".dt_" + headerList[i]).prepend("??");
+                }
+            if (i < (headerListLen - 1) && $(".dt_" + headerList[i]).length > 0) {
+                for (var j = headerListLen - 1; j > i; j--) {
+                    $(".dt_" + headerList[j]).css({
+                        "margin-left": (i + 1) * 15 + "px"
+                    });
+                }
+            }
+        }
+
+    }
+
+CreatePostNavigator(); 
+</script>
+-->
+
+<span style="font-size:14px"><p id="back-to-top"><a href="#_labelTop"><span></span></a></p></span>
+<script src="http://ajax.microsoft.com/ajax/jQuery/jquery-1.7.2.min.js"></script>
+<script>
+$(function(){
+        $(function () {
+            $(window).scroll(function(){
+                if ($(window).scrollTop()>100){
+                    $("#back-to-top").fadeIn(1500);
+                }
+                else
+                {
+                    $("#back-to-top").fadeOut(1500);
+                }
+            });
+
+            $("#back-to-top").click(function(){
+        if ($('html').scrollTop()) {
+                $('html').animate({ scrollTop: 0 }, 1000);
+                return false;
+            }
+            $('body').animate({ scrollTop: 0 }, 1000);
+                 return false;            
+           });       
+     });    
+});
+</script>
+<!--
+<script>
+    $(document).bind("contextmenu",function(){return false;});
+    document.onkeydown = function(){
+        if(window.event && window.event.keyCode == 123) {
+            event.keyCode = 0;
+            event.returnValue = false;
+        }
+       }
+</script>
+-->
+<script>
+    $(window).load(function(){
+        $('.code .line').each(function(index){
+            var yqhg=$(this).height();
+            $('.gutter .line:eq('+index+')').attr('style','height:'+yqhg+'px !important')
+            $('.code .line:eq('+index+')').attr('style','height:'+yqhg+'px !important')
+        });
+    });
+</script>
+
+
+
+<link href="http://files.cnblogs.com/files/gitwow/cnblog-scroller.css" type="text/css" rel="stylesheet">
+<script src="http://files.cnblogs.com/files/gitwow/scrollspy.js" type="text/javascript"></script>
+<script src="http://files.cnblogs.com/files/gitwow/stickUp.min.js" type="text/javascript"></script>
+<script src="http://files.cnblogs.com/files/gitwow/cnblog-scroller.js" type="text/javascript"></script>
