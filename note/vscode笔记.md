@@ -78,3 +78,56 @@ $a^2$
 ![](https://img2018.cnblogs.com/blog/1588269/201903/1588269-20190321162530043-843092505.png)
 重新使用“中文”/“GB2312 (Simplified)”，就OK了
 ![](https://img2018.cnblogs.com/blog/1588269/201903/1588269-20190321162825490-1070910098.png)
+
+## 从markdown文件创建思维导图
+
+[pzhaonet/mindr: an R package which converts markdown files (.md, .Rmd) into mindmaps (brainstorms)](https://github.com/pzhaonet/mindr)
+
+[迅捷画图官网 - 专业的思维导图|流程图制作网站](http://www.liuchengtu.com/)
+
+![](https://img2018.cnblogs.com/blog/1588269/201903/1588269-20190325174200564-1814723978.png)
+
+## 15款最好用的思维导图工具
+
+![](https://img2018.cnblogs.com/blog/1588269/201903/1588269-20190325175201594-555582369.png)
+
+## “思维导图”与Markdown互相转换
+
+[“思维导图”与Markdown互相转换 - 烧烤仙人个人博客 - CSDN博客](https://blog.csdn.net/qq_29777823/article/details/82085362)
+注册地址：[ProcessOn - 免费在线作图，实时协作](https://www.processon.com/)
+官网下载地址：[MindNode for Mac - MindNode](https://mindnode.com/mindnode/mac)
+参考：[用“思维导图”写markdown - 简书](https://www.jianshu.com/p/093aba73b751)
+
+![](https://img2018.cnblogs.com/blog/1588269/201903/1588269-20190325180439718-2093533621.png)
+
+![](https://img2018.cnblogs.com/blog/1588269/201903/1588269-20190325181445432-1847463059.png)
+
+## Markdown和思维导图结合 文章层级思路清晰 成就深度好文
+
+[Markdown和思维导图结合 文章层级思路清晰 成就深度好文](http://wemedia.ifeng.com/94213493/wemedia.shtml)
+
+使用markdown的人都知道，markdown有专属语法，对新手来说，语法需要学习，不管是markdown写作的新手还是常用用户，都应该了解一下，markdown加上思维导图的黑科技神操作，你一定没有体验过吧。
+
+![](https://img2018.cnblogs.com/blog/1588269/201903/1588269-20190325181924003-1099422193.gif)
+
+![](https://img2018.cnblogs.com/blog/1588269/201903/1588269-20190325182132726-472349741.png)
+
+## MarkRemap: 将 Markdown 转成漂亮的脑图
+
+[MarkRemap: 将 Markdown 转成漂亮的脑图 - 少数派](https://sspai.com/post/48272)
+[MarkRemap主页](https://markremap.com/)
+[D3.js - Data-Driven Documents](https://d3js.org/)
+[dundalek/markmap: Visualize markdown documents as mindmaps](https://github.com/dundalek/markmap)
+[MarkEditor](https://www.markeditor.com/)
+
+![](https://img2018.cnblogs.com/blog/1588269/201903/1588269-20190325182937836-940209703.png)
+
+![](https://img2018.cnblogs.com/blog/1588269/201903/1588269-20190325182959414-2107930883.gif)
+
+![](https://img2018.cnblogs.com/blog/1588269/201903/1588269-20190325183032250-1799819082.png)
+
+## 让思路更清晰——我是怎样使用思维导图的
+
+[让思路更清晰——我是怎样使用思维导图的 - Coding 博客](https://blog.coding.net/blog/coding-mindmap)
+
+![](https://img2018.cnblogs.com/blog/1588269/201903/1588269-20190326062023140-1819383791.png)
