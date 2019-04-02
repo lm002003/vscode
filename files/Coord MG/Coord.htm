@@ -1,0 +1,1237 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=GB2312">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./Coord.files/filelist.xml">
+<link rel=Edit-Time-Data href="./Coord.files/editdata.mso">
+<link rel=OLE-Object-Data href="./Coord.files/oledata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>坐标转换问题</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Jerry</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Jerry</o:LastAuthor>
+  <o:Revision>60</o:Revision>
+  <o:TotalTime>498</o:TotalTime>
+  <o:Created>2001-12-21T08:56:00Z</o:Created>
+  <o:LastSaved>2006-07-27T06:24:00Z</o:LastSaved>
+  <o:Pages>9</o:Pages>
+  <o:Words>473</o:Words>
+  <o:Characters>2698</o:Characters>
+  <o:Company>South</o:Company>
+  <o:Lines>22</o:Lines>
+  <o:Paragraphs>5</o:Paragraphs>
+  <o:CharactersWithSpaces>3313</o:CharactersWithSpaces>
+  <o:Version>9.2812</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:PunctuationKerning/>
+  <w:DrawingGridVerticalSpacing>7.8 磅</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+  <w:Compatibility>
+   <w:SpaceForUL/>
+   <w:BalanceSingleByteDoubleByteWidth/>
+   <w:DoNotLeaveBackslashAlone/>
+   <w:ULTrailSpace/>
+   <w:DoNotExpandShiftReturn/>
+   <w:AdjustLineHeightInTable/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+span.GRAME
+	{mso-gram-e:yes;}
+ /* Font Definitions */
+@font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:SimSun;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 135135232 16 0 262145 0;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 135135232 16 0 262145 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.5pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:宋体;
+	mso-font-kerning:1.0pt;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+ /* Page Definitions */
+@page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-paper-source:0;
+	layout-grid:15.6pt;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:182669467;
+	mso-list-type:hybrid;
+	mso-list-template-ids:672542838 -1458544268 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l0:level1
+	{mso-level-number-format:japanese-counting;
+	mso-level-text:%1，;
+	mso-level-tab-stop:21.0pt;
+	mso-level-number-position:left;
+	margin-left:21.0pt;
+	text-indent:-21.0pt;}
+@list l1
+	{mso-list-id:1685595513;
+	mso-list-type:hybrid;
+	mso-list-template-ids:2090206774 1529624774 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l1:level1
+	{mso-level-text:%1．;
+	mso-level-tab-stop:39.0pt;
+	mso-level-number-position:left;
+	margin-left:39.0pt;
+	text-indent:-18.0pt;}
+@list l2
+	{mso-list-id:1811051381;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1148965852 163752998 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l2:level1
+	{mso-level-text:%1．;
+	mso-level-tab-stop:39.0pt;
+	mso-level-number-position:left;
+	margin-left:39.0pt;
+	text-indent:-18.0pt;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1126"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=ZH-CN link=blue vlink=purple style='tab-interval:21.0pt;text-justify-trim:
+punctuation'>
+
+<div class=Section1 style='layout-grid:15.6pt'>
+
+<table border=1 cellspacing=0 cellpadding=0 bgcolor="#ffcc00" style='background:
+ #FFCC00;border-collapse:collapse;border:none;mso-border-bottom-alt:solid windowtext .5pt;
+ mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-lastrow:yes'>
+  <td width=480 valign=top style='width:360.0pt;border:none;border-bottom:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span style='font-size:12.0pt;font-family:宋体;
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>坐标转换问题</span></b><b><span
+  lang=EN-US style='font-size:12.0pt'><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='text-indent:21.0pt'><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>坐标转换问题的详细了解对于测量很重要，那么请和我一起来讨论这个问题。</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>首先，我们要弄清楚几种坐标表示方法。大致有三种坐标表示方法：经纬度和高程，空间直角坐标，平面坐标和高程。</span></p>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>我们通常说的</span><span lang=EN-US>WGS-84</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>坐标是经纬度和高程这一种，北京</span><span lang=EN-US>54</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>坐标是平面坐标和高程着一种。</span><span lang=EN-US><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt'><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>现在，再搞清楚转换的严密性问题，在同一个椭球里的转换都是严密的，而在不同的椭球之间的转换是不严密的。举个例子，在</span><span
+lang=EN-US>WGS-84</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>坐标和北京</span><span lang=EN-US>54</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>坐标之间是不存在一套转换参数可以全国通用的，在每个地方会不一样，因为它们是两个不同的椭球基准。</span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt'><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>那么，两个椭球间的坐标转换应该是怎样的呢？一般而言比较严密的是用七参数法（包括布尔莎模型，一步法模型，海尔曼特等），即</span><span
+lang=EN-US>X</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>平移，</span><span lang=EN-US>Y</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>平移，</span><span lang=EN-US>Z</span><span style='font-family:
+宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>平移，</span><span
+lang=EN-US>X</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>旋转，</span><span lang=EN-US>Y</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>旋转，</span><span lang=EN-US>Z</span><span style='font-family:
+宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>旋转，尺度变化</span><span
+lang=EN-US>K</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>。要求得七参数就需要在一个地区需要</span><span
+lang=EN-US>3</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>个以上的已知点，如果区域范围不大，最远点间的距离不大于</span><span
+lang=EN-US>30Km(</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>经验值</span><span lang=EN-US>)</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>，这可以用三参数（莫洛登斯基模型），即</span><span lang=EN-US>X</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>平移，</span><span lang=EN-US>Y</span><span style='font-family:
+宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>平移，</span><span
+lang=EN-US>Z</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>平移，而将</span><span lang=EN-US>X</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>旋转，</span><span lang=EN-US>Y</span><span style='font-family:
+宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>旋转，</span><span
+lang=EN-US>Z</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>旋转，尺度变化</span><span lang=EN-US>K</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>视为</span><span lang=EN-US>0</span><span style='font-family:
+宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>，所以三参数只是七参数的一种特例。在本软件中提供了计算三参数、七参数的功能。</span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt'><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>在一个椭球的不同坐标系中转换可能会用到平面转换，现阶段一般分为四参数和平面网格拟合两种方法，以四参数法在国内用的较多，举个例子，在深圳既有北京</span><span
+lang=EN-US>54</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>坐标又有深圳坐标，在这两种坐标之间转换就用到四参数，计算四参数需要两个已知点。更精确的可以提供网格拟合数据</span><span
+lang=EN-US>,</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>本软件提供计算和应用四参数的功能</span><span
+lang=EN-US>,</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>也提供了网格拟合的功能。</span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt'><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>另外，还有高程拟合的问题，大地水准面模型在国内用户中很少会用到，但在国际上已经是标准之一，本软件提供最常用的</span><span
+lang=EN-US>EGM96</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>模型和</span><span lang=EN-US>Geoid99</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>模型。</span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt'><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>最后，本软件提供了</span><span
+lang=EN-US>ITRF</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>框架转换方法，涉及到</span><span lang=EN-US>ITRF2000</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>和以往用过的</span><span lang=EN-US>ITRF96</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>，</span><span lang=EN-US>ITRF93</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>之间的换算，对于方面的需求的用户是个尝试。</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>现在举个例子说明：在珠江有一个测区，需要完成</span><span lang=EN-US>WGS-84</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>坐标到珠江坐标系（</span><span lang=EN-US>54</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>椭球）的坐标转换，整个转换过程是</span></p>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>这样的：</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-tab-count:4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-field-code:"SHAPE  \\* MERGEFORMAT";
+mso-field-lock:yes'><!--[if gte vml 1]><v:group id="_x0000_s1060" style='position:absolute;
+ margin-left:0;margin-top:0;width:378.75pt;height:405pt;z-index:1;
+ mso-position-horizontal-relative:char;mso-position-vertical-relative:line'
+ coordorigin="1140,5115" coordsize="7575,8100" editas="canvas">
+ <o:lock v:ext="edit" aspectratio="t"/>
+ <v:shapetype id="_x0000_t75" coordsize="21600,21600" o:spt="75"
+  o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+  <v:stroke joinstyle="miter"/>
+  <v:formulas>
+   <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+   <v:f eqn="sum @0 1 0"/>
+   <v:f eqn="sum 0 0 @1"/>
+   <v:f eqn="prod @2 1 2"/>
+   <v:f eqn="prod @3 21600 pixelWidth"/>
+   <v:f eqn="prod @3 21600 pixelHeight"/>
+   <v:f eqn="sum @0 0 1"/>
+   <v:f eqn="prod @6 1 2"/>
+   <v:f eqn="prod @7 21600 pixelWidth"/>
+   <v:f eqn="sum @8 21600 0"/>
+   <v:f eqn="prod @7 21600 pixelHeight"/>
+   <v:f eqn="sum @10 21600 0"/>
+  </v:formulas>
+  <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+  <o:lock v:ext="edit" aspectratio="t"/>
+ </v:shapetype><v:shape id="_x0000_s1061" type="#_x0000_t75" style='position:absolute;
+  left:1140;top:5115;width:7575;height:8100' o:preferrelative="f">
+  <v:fill o:detectmouseclick="t"/>
+  <v:path o:extrusionok="t" o:connecttype="none"/>
+ </v:shape><v:line id="_x0000_s1062" style='position:absolute' from="2145,5805"
+  to="2146,6315">
+  <v:stroke endarrow="block"/>
+ </v:line><v:shapetype id="_x0000_t202" coordsize="21600,21600" o:spt="202"
+  path="m0,0l0,21600,21600,21600,21600,0xe">
+  <v:stroke joinstyle="miter"/>
+  <v:path gradientshapeok="t" o:connecttype="rect"/>
+ </v:shapetype><v:shape id="_x0000_s1063" type="#_x0000_t202" style='position:absolute;
+  left:1140;top:5340;width:2009;height:465'>
+  <v:textbox style='mso-next-textbox:#_x0000_s1063'>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal><span lang=EN-US>WGS-84</span><span style='font-family:
+     宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>经纬度</span></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:shape id="_x0000_s1064" type="#_x0000_t202" style='position:absolute;
+  left:1140;top:6315;width:2009;height:390'>
+  <v:textbox style='mso-next-textbox:#_x0000_s1064'>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal><span lang=EN-US>WGS-84</span><span style='font-family:
+     宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>空间直角</span></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:shape id="_x0000_s1065" type="#_x0000_t202" style='position:absolute;
+  left:1140;top:7245;width:2009;height:390'>
+  <v:textbox style='mso-next-textbox:#_x0000_s1065'>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal style='text-indent:21.0pt;mso-char-indent-count:2.0;
+     mso-char-indent-size:10.5pt;mso-char-indent-size:10.5pt'><span
+     style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+     "Times New Roman"'>椭球转换</span></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:line id="_x0000_s1066" style='position:absolute' from="2146,6705"
+  to="2147,7245">
+  <v:stroke endarrow="block"/>
+ </v:line><v:line id="_x0000_s1067" style='position:absolute' from="2146,8475"
+  to="2147,8984">
+  <v:stroke endarrow="block"/>
+ </v:line><v:shape id="_x0000_s1068" type="#_x0000_t202" style='position:absolute;
+  left:1141;top:8085;width:2008;height:390'>
+  <v:textbox style='mso-next-textbox:#_x0000_s1068'>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal style='text-indent:5.25pt;mso-char-indent-count:.5;
+     mso-char-indent-size:10.5pt;mso-char-indent-size:10.5pt'><span
+     style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+     "Times New Roman"'>北京</span><span lang=EN-US>54</span><span
+     style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+     "Times New Roman"'>空间直角</span></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:shape id="_x0000_s1069" type="#_x0000_t202" style='position:absolute;
+  left:1141;top:8984;width:2008;height:390'>
+  <v:textbox style='mso-next-textbox:#_x0000_s1069'>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal style='text-indent:5.25pt;mso-char-indent-count:.5;
+     mso-char-indent-size:10.5pt;mso-char-indent-size:10.5pt'><span
+     style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+     "Times New Roman"'>北京</span><span lang=EN-US>54</span><span
+     style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+     "Times New Roman"'>经纬度</span></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:line id="_x0000_s1070" style='position:absolute' from="2147,9374"
+  to="2148,9915">
+  <v:stroke endarrow="block"/>
+ </v:line><v:line id="_x0000_s1071" style='position:absolute' from="2145,7635"
+  to="2148,8085">
+  <v:stroke endarrow="block"/>
+ </v:line><v:shape id="_x0000_s1072" type="#_x0000_t202" style='position:absolute;
+  left:1140;top:9915;width:2009;height:390'>
+  <v:textbox style='mso-next-textbox:#_x0000_s1072'>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal style='text-indent:21.0pt;mso-char-indent-count:2.0;
+     mso-char-indent-size:10.5pt;mso-char-indent-size:10.5pt'><span
+     style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+     "Times New Roman"'>坐标投影</span></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:line id="_x0000_s1074" style='position:absolute' from="2146,11144"
+  to="2147,11654">
+  <v:stroke endarrow="block"/>
+ </v:line><v:shape id="_x0000_s1075" type="#_x0000_t202" style='position:absolute;
+  left:1141;top:10755;width:2008;height:389'>
+  <v:textbox style='mso-next-textbox:#_x0000_s1075'>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal style='text-indent:5.25pt;mso-char-indent-count:.5;
+     mso-char-indent-size:10.5pt;mso-char-indent-size:10.5pt'><span
+     style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+     "Times New Roman"'>北京</span><span lang=EN-US>54</span><span
+     style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+     "Times New Roman"'>平面坐标</span></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:shape id="_x0000_s1076" type="#_x0000_t202" style='position:absolute;
+  left:1141;top:11654;width:2008;height:390'>
+  <v:textbox style='mso-next-textbox:#_x0000_s1076'>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal style='text-indent:10.5pt;mso-char-indent-count:1.0;
+     mso-char-indent-size:10.5pt;mso-char-indent-size:10.5pt'><span lang=EN-US><span
+     style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span></span><span
+     style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+     "Times New Roman"'>平面转换</span></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:line id="_x0000_s1077" style='position:absolute' from="2145,10305"
+  to="2148,10755">
+  <v:stroke endarrow="block"/>
+ </v:line><v:line id="_x0000_s1078" style='position:absolute' from="2145,12044"
+  to="2145,12450">
+  <v:stroke endarrow="block"/>
+ </v:line><v:shape id="_x0000_s1079" type="#_x0000_t202" style='position:absolute;
+  left:1141;top:12450;width:2008;height:390'>
+  <v:textbox style='mso-next-textbox:#_x0000_s1079'>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal style='text-indent:10.5pt;mso-char-indent-count:1.0;
+     mso-char-indent-size:10.5pt;mso-char-indent-size:10.5pt'><span
+     style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+     "Times New Roman"'>珠江平面坐标</span></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:line id="_x0000_s1081" style='position:absolute' from="4951,5805"
+  to="4953,6315">
+  <v:stroke endarrow="block"/>
+ </v:line><v:shape id="_x0000_s1082" type="#_x0000_t202" style='position:absolute;
+  left:3945;top:5415;width:2010;height:390'>
+  <v:textbox style='mso-next-textbox:#_x0000_s1082'>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal style='text-indent:15.75pt;mso-char-indent-count:1.5;
+     mso-char-indent-size:10.5pt;mso-char-indent-size:10.5pt'><span
+     style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+     "Times New Roman"'>三个已知点</span></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:shape id="_x0000_s1083" type="#_x0000_t202" style='position:absolute;
+  left:3945;top:6315;width:2010;height:390'>
+  <v:textbox style='mso-next-textbox:#_x0000_s1083'>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal style='text-indent:15.75pt;mso-char-indent-count:1.5;
+     mso-char-indent-size:10.5pt;mso-char-indent-size:10.5pt'><span
+     style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+     "Times New Roman"'>计算七参数</span></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:line id="_x0000_s1084" style='position:absolute' from="4951,6705"
+  to="4953,7455">
+  <v:stroke endarrow="block"/>
+ </v:line><v:line id="_x0000_s1085" style='position:absolute' from="7711,5805"
+  to="7712,6315">
+  <v:stroke endarrow="block"/>
+ </v:line><v:shape id="_x0000_s1086" type="#_x0000_t202" style='position:absolute;
+  left:6706;top:5415;width:2009;height:390'>
+  <v:textbox style='mso-next-textbox:#_x0000_s1086'>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal style='text-indent:15.75pt;mso-char-indent-count:1.5;
+     mso-char-indent-size:10.5pt;mso-char-indent-size:10.5pt'><span
+     style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+     "Times New Roman"'>一个已知点</span></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:shape id="_x0000_s1087" type="#_x0000_t202" style='position:absolute;
+  left:6706;top:6315;width:2009;height:390'>
+  <v:textbox style='mso-next-textbox:#_x0000_s1087'>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal><span lang=EN-US><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+     style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+     "Times New Roman"'>计算三参数</span></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:line id="_x0000_s1088" style='position:absolute' from="7712,6705"
+  to="7713,7455">
+  <v:stroke endarrow="block"/>
+ </v:line><v:line id="_x0000_s1090" style='position:absolute;flip:x' from="3149,10095"
+  to="4953,10096">
+  <v:stroke endarrow="block"/>
+ </v:line><v:shape id="_x0000_s1096" type="#_x0000_t202" style='position:absolute;
+  left:4035;top:8984;width:2008;height:390'>
+  <v:textbox style='mso-next-textbox:#_x0000_s1096'>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal style='text-indent:5.25pt;mso-char-indent-count:.5;
+     mso-char-indent-size:10.5pt;mso-char-indent-size:10.5pt'><span
+     style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+     "Times New Roman"'>投影参数设置</span></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:line id="_x0000_s1097" style='position:absolute' from="4951,9374"
+  to="4951,10095"/>
+ <v:shape id="_x0000_s1099" type="#_x0000_t202" style='position:absolute;
+  left:5880;top:9915;width:2009;height:390'>
+  <v:textbox style='mso-next-textbox:#_x0000_s1099'>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal style='text-indent:21.0pt;mso-char-indent-count:2.0;
+     mso-char-indent-size:10.5pt;mso-char-indent-size:10.5pt'><span
+     style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+     "Times New Roman"'>两个已知点</span></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:line id="_x0000_s1100" style='position:absolute;flip:x' from="6885,11144"
+  to="6886,11865">
+  <v:stroke endarrow="block"/>
+ </v:line><v:shape id="_x0000_s1101" type="#_x0000_t202" style='position:absolute;
+  left:5881;top:10755;width:2008;height:389'>
+  <v:textbox style='mso-next-textbox:#_x0000_s1101'>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal style='text-indent:15.75pt;mso-char-indent-count:1.5;
+     mso-char-indent-size:10.5pt;mso-char-indent-size:10.5pt'><span
+     style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+     "Times New Roman"'>计算四参数</span></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:line id="_x0000_s1102" style='position:absolute' from="6885,10305"
+  to="6888,10755">
+  <v:stroke endarrow="block"/>
+ </v:line><v:line id="_x0000_s1104" style='position:absolute;flip:x' from="3149,7455"
+  to="7711,7455">
+  <v:stroke endarrow="block"/>
+ </v:line><v:line id="_x0000_s1105" style='position:absolute;flip:x' from="3149,11865"
+  to="6888,11865">
+  <v:stroke endarrow="block"/>
+ </v:line><w:anchorlock/>
+</v:group><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:0;margin-left:0px;margin-top:0px;width:508px;height:540px'><img
+width=508 height=540 src="./Coord.files/image001.gif" v:shapes="_x0000_s1060 _x0000_s1061 _x0000_s1062 _x0000_s1063 _x0000_s1064 _x0000_s1065 _x0000_s1066 _x0000_s1067 _x0000_s1068 _x0000_s1069 _x0000_s1070 _x0000_s1071 _x0000_s1072 _x0000_s1074 _x0000_s1075 _x0000_s1076 _x0000_s1077 _x0000_s1078 _x0000_s1079 _x0000_s1081 _x0000_s1082 _x0000_s1083 _x0000_s1084 _x0000_s1085 _x0000_s1086 _x0000_s1087 _x0000_s1088 _x0000_s1090 _x0000_s1096 _x0000_s1097 _x0000_s1099 _x0000_s1100 _x0000_s1101 _x0000_s1102 _x0000_s1104 _x0000_s1105"></span><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_i1025" type="#_x0000_t75" style='width:378.75pt;height:405pt'>
+ <v:imagedata croptop="-65520f" cropbottom="65520f"/>
+</v:shape><![endif]--><![if !vml]><img width=505 height=540
+src="./Coord.files/image002.gif" v:shapes="_x0000_i1025"><![endif]></span></span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>本软件使用说明：</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>本软件采用坐标系统库管理，用户可以将一种转换在系统库里保存下来，下次使用时从文件菜单中选择打开库文件来调用所有已有的转换参数。</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b
+style='mso-bidi-font-weight:normal'><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>实例一：</span><span
+lang=EN-US><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-indent:21.0pt'><b style='mso-bidi-font-weight:
+normal'><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>转换要求：</span><span lang=EN-US><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-indent:21.0pt'><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>用户在一个佛山测区内使用</span><span
+lang=EN-US>RTK GPS</span><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>接收机接受了一些点的</span><span
+lang=EN-US>WGS-84</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>的坐标</span><span lang=EN-US>,</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>现在希望将其转换为北京</span><span lang=EN-US>54</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>和佛山坐标系下的坐标。用户有佛山测区的一些控制点，这些控制点有</span><span lang=EN-US>WGS-84</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>坐标，也有北京</span><span lang=EN-US>-54</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>坐标也有佛山坐标。</span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt'><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt'><b style='mso-bidi-font-weight:
+normal'><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>分析：</span><span lang=EN-US><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-indent:21.0pt'><span lang=EN-US>WGS-84</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>坐标和北京</span><span lang=EN-US>54</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>坐标是不同两个椭球的坐标转换，所以要求得三参数或七参数，而北京</span><span lang=EN-US>54</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>和佛山坐标都是同一个椭球，所以他们之间的转换是地方坐标转换，需要求得地方转化四参数，因为要求得到的北京</span><span
+lang=EN-US>54</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>是平面坐标所以需要设置投影参数。：</span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt'><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt'><b style='mso-bidi-font-weight:
+normal'><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>步骤：</span><span lang=EN-US><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:39.0pt;text-indent:-18.0pt;mso-list:l2 level1 lfo2;
+tab-stops:list 39.0pt'><![if !supportLists]><span lang=EN-US>1．<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><![endif]><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>新建坐标转换文件，便于下次使用转换是不用重新输入，直接打开即可。</span></p>
+
+<p class=MsoNormal style='margin-left:21.0pt'><span lang=EN-US><!--[if gte vml 1]><v:shape
+ id="_x0000_i1026" type="#_x0000_t75" style='width:415.5pt;height:298.5pt'>
+ <v:imagedata src="./Coord.files/image003.jpg" o:title="Open"/>
+</v:shape><![endif]--><![if !vml]><img width=554 height=398
+src="./Coord.files/image003.jpg" v:shapes="_x0000_i1026"><![endif]></span></p>
+
+<p class=MsoNormal style='margin-left:21.0pt'><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt;text-indent:-18.0pt;mso-list:l2 level1 lfo2;
+tab-stops:list 39.0pt'><![if !supportLists]><span lang=EN-US>2．<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><![endif]><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>设置投影参数。</span></p>
+
+<p class=MsoNormal style='margin-left:81.0pt;text-indent:3.0pt'><span
+lang=EN-US><!--[if gte vml 1]><v:shape id="_x0000_i1027" type="#_x0000_t75"
+ style='width:312.75pt;height:283.5pt'>
+ <v:imagedata src="./Coord.files/image004.jpg" o:title="Projection"/>
+</v:shape><![endif]--><![if !vml]><img width=417 height=378
+src="./Coord.files/image004.jpg" v:shapes="_x0000_i1027"><![endif]></span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span lang=EN-US><span
+style='mso-tab-count:1'> </span></span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt;text-indent:-18.0pt;mso-list:l2 level1 lfo2;
+tab-stops:list 39.0pt'><![if !supportLists]><span lang=EN-US>3．<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><![endif]><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>用一个已知点（</span><span lang=EN-US>WGS84</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>坐标和北京</span><span lang=EN-US>54</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>坐标），计算不同椭球转换的三参数（或七参数）。</span></p>
+
+<p class=MsoNormal style='margin-left:81.0pt;text-indent:3.0pt'><span
+lang=EN-US><!--[if gte vml 1]><v:shape id="_x0000_i1028" type="#_x0000_t75"
+ style='width:226.5pt;height:161.25pt'>
+ <v:imagedata src="./Coord.files/image005.gif" o:title="image005"/>
+</v:shape><![endif]--><![if !vml]><img width=302 height=215
+src="./Coord.files/image005.gif" v:shapes="_x0000_i1028"><![endif]></span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt;text-indent:-18.0pt;mso-list:l2 level1 lfo2;
+tab-stops:list 39.0pt'><![if !supportLists]><span lang=EN-US>4．<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><![endif]><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>确定转换参数。</span></p>
+
+<p class=MsoNormal style='margin-left:84.0pt;text-indent:21.0pt'><span
+lang=EN-US><!--[if gte vml 1]><v:shape id="_x0000_i1049" type="#_x0000_t75"
+ style='width:186pt;height:242.25pt'>
+ <v:imagedata src="./Coord.files/image006.jpg" o:title="image007"/>
+</v:shape><![endif]--><![if !vml]><img width=248 height=323
+src="./Coord.files/image006.jpg" v:shapes="_x0000_i1049"><![endif]></span></p>
+
+<p class=MsoNormal style='margin-left:21.0pt'><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt;text-indent:-18.0pt;mso-list:l2 level1 lfo2;
+tab-stops:list 39.0pt'><![if !supportLists]><span lang=EN-US>5．<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><![endif]><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>打开七参数转换，完成</span><span lang=EN-US>WGS84</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>到北京</span><span lang=EN-US>54</span><span style='font-family:
+宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>的转换。</span></p>
+
+<p class=MsoNormal style='margin-left:21.0pt'><span lang=EN-US><!--[if gte vml 1]><v:shape
+ id="_x0000_i1051" type="#_x0000_t75" style='width:369.75pt;height:235.5pt'>
+ <v:imagedata src="./Coord.files/image007.jpg" o:title="image009"/>
+</v:shape><![endif]--><![if !vml]><img width=493 height=314
+src="./Coord.files/image007.jpg" v:shapes="_x0000_i1051"><![endif]></span></p>
+
+<p class=MsoNormal style='margin-left:21.0pt'><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt;text-indent:-18.0pt;mso-list:l2 level1 lfo2;
+tab-stops:list 39.0pt'><![if !supportLists]><span lang=EN-US>6．<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><![endif]><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>利用多个已知点（北京</span><span lang=EN-US>54</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>坐标和佛山坐标），计算同一个椭球的地方坐标转换（四参数）。</span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt'><span lang=EN-US><!--[if gte vml 1]><v:shape
+ id="_x0000_i1031" type="#_x0000_t75" style='width:408.75pt;height:226.5pt'
+ o:ole="">
+ <v:imagedata src="./Coord.files/image008.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=545 height=302
+src="./Coord.files/image009.jpg" v:shapes="_x0000_i1031"><![endif]><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="PBrush" ShapeID="_x0000_i1031"
+  DrawAspect="Content" ObjectID="_1215515449">
+ </o:OLEObject>
+</xml><![endif]--></span></p>
+
+<p class=MsoNormal style='margin-left:21.0pt'><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt;text-indent:-18.0pt;mso-list:l2 level1 lfo2;
+tab-stops:list 39.0pt'><![if !supportLists]><span lang=EN-US>7．<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><![endif]><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>确定转换参数</span></p>
+
+<p class=MsoNormal style='margin-left:63.0pt;text-indent:21.0pt'><span
+lang=EN-US><!--[if gte vml 1]><v:shape id="_x0000_i1032" type="#_x0000_t75"
+ style='width:258pt;height:210pt' o:ole="">
+ <v:imagedata src="./Coord.files/image010.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=344 height=280
+src="./Coord.files/image011.jpg" v:shapes="_x0000_i1032"><![endif]><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="PBrush" ShapeID="_x0000_i1032"
+  DrawAspect="Content" ObjectID="_1215515450">
+ </o:OLEObject>
+</xml><![endif]--></span></p>
+
+<p class=MsoNormal style='margin-left:21.0pt'><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt;text-indent:-18.0pt;mso-list:l2 level1 lfo2;
+tab-stops:list 39.0pt'><![if !supportLists]><span lang=EN-US>8．<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><![endif]><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>同时打开七参数和平面转换。完成</span><span lang=EN-US>WGS-84</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>到佛山的转换。</span></p>
+
+<p class=MsoNormal style='margin-left:21.0pt'><span lang=EN-US><!--[if gte vml 1]><v:shape
+ id="_x0000_i1033" type="#_x0000_t75" style='width:370.5pt;height:237.75pt'
+ o:ole="">
+ <v:imagedata src="./Coord.files/image012.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=494 height=317
+src="./Coord.files/image013.jpg" v:shapes="_x0000_i1033"><![endif]><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="PBrush" ShapeID="_x0000_i1033"
+  DrawAspect="Content" ObjectID="_1215515451">
+ </o:OLEObject>
+</xml><![endif]--></span></p>
+
+<p class=MsoNormal style='margin-left:21.0pt'><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:21.0pt'><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:21.0pt'><b><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>实例二：</span><span
+lang=EN-US><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-indent:21.0pt'><b style='mso-bidi-font-weight:
+normal'><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>转换要求：</span><span lang=EN-US><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-indent:21.0pt'><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>用户在一个测区内有一些点的北京</span><span
+lang=EN-US>54</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>的坐标</span><span lang=EN-US>,</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>现在希望将其转换为国家</span><span lang=EN-US>80</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>坐标。用户有测区的一些控制点，这些控制点既有北京</span><span lang=EN-US>-54</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>坐标也有国家</span><span lang=EN-US>80</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>坐标。</span></p>
+
+<p class=MsoNormal style='margin-left:21.0pt'><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:21.0pt'><b style='mso-bidi-font-weight:
+normal'><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>文件转换</span><span lang=EN-US><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:21.0pt'><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>用户如果需要转换的是一个文件里的所有的点，可以用文件转换来完成。</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt;text-indent:-18.0pt;mso-list:l1 level1 lfo4;
+tab-stops:list 39.0pt'><![if !supportLists]><span lang=EN-US>1．<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><![endif]><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>确定转换关系：</span></p>
+
+<p class=MsoNormal style='margin-left:21.0pt;text-indent:18.0pt'><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>按照上面的步骤完成</span><span lang=EN-US>1~8</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>步的操作，这样就确立了转换关系，也就是说文件里所有的点都按照上面确定的转换关系来完成转换。</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt;text-indent:-18.0pt;mso-list:l1 level1 lfo4;
+tab-stops:list 39.0pt'><![if !supportLists]><span lang=EN-US>2．<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><![endif]><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>确定转换格式：</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>在主界面中选择文件转换，点击格式按钮。</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span lang=EN-US><!--[if gte vml 1]><v:shape
+ id="_x0000_i1034" type="#_x0000_t75" style='width:369pt;height:234pt'>
+ <v:imagedata src="./Coord.files/image014.jpg" o:title="image011"/>
+</v:shape><![endif]--><![if !vml]><img width=492 height=312
+src="./Coord.files/image014.jpg" v:shapes="_x0000_i1034"><![endif]></span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>新建格式：在名称，扩展名中输入相应的内容，然后自己选择数据列表中的内容并添加来确定格式，如果列表中没有的就用其他来表示，完成后点击完成新建。</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:21.0pt'><span
+lang=EN-US><!--[if gte vml 1]><v:shape id="_x0000_i1035" type="#_x0000_t75"
+ style='width:305.25pt;height:195pt'>
+ <v:imagedata src="./Coord.files/image015.jpg" o:title="image012"/>
+</v:shape><![endif]--><![if !vml]><img width=407 height=260
+src="./Coord.files/image015.jpg" v:shapes="_x0000_i1035"><![endif]></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>选择格式：在格式列表中选择格式</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><!--[if gte vml 1]><v:shape
+ id="_x0000_i1036" type="#_x0000_t75" style='width:306.75pt;height:195pt'>
+ <v:imagedata src="./Coord.files/image016.jpg" o:title="image013"/>
+</v:shape><![endif]--><![if !vml]><img width=409 height=260
+src="./Coord.files/image016.jpg" v:shapes="_x0000_i1036"><![endif]></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>文件转换方式：转换后的文件有三种方式，如原来的文件是</span><span lang=EN-US>C:\File.txt</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>文件，用户选择其中的一种，这样转换后就会根据这个方式来完成新建文件。却省是在文件扩展名后</span><span
+lang=EN-US>+1</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>，即转换后会新生成一个</span><span lang=EN-US>C:\File.txt1</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>文件。</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><!--[if gte vml 1]><v:shape
+ id="_x0000_i1037" type="#_x0000_t75" style='width:304.5pt;height:194.25pt'>
+ <v:imagedata src="./Coord.files/image017.jpg" o:title="image014"/>
+</v:shape><![endif]--><![if !vml]><img width=406 height=259
+src="./Coord.files/image017.jpg" v:shapes="_x0000_i1037"><![endif]></span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>在上述工作完成后，单击确定按钮即可。</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt;text-indent:-18.0pt;mso-list:l1 level1 lfo4;
+tab-stops:list 39.0pt'><![if !supportLists]><span lang=EN-US>3．<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><![endif]><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>选择转换文件并完成转换</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>单击浏览按钮，打开文件选择对话框，选择文件并确定，在左边会显示文件，用户单击</span><span
+lang=EN-US> =</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>〉按钮即可完成转换，右边会显示出转换后的文件名和路径，用户可以通过双击列表中的文件即可查看文件内容。</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span lang=EN-US><!--[if gte vml 1]><v:shape
+ id="_x0000_i1038" type="#_x0000_t75" style='width:369pt;height:233.25pt'>
+ <v:imagedata src="./Coord.files/image018.jpg" o:title="image015"/>
+</v:shape><![endif]--><![if !vml]><img width=492 height=311
+src="./Coord.files/image018.jpg" v:shapes="_x0000_i1038"><![endif]></span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>实例三：</span><span lang=EN-US><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>转换要求：</span><span lang=EN-US><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-indent:36.75pt'><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>用户在番禹工作，要求完成从</span><span
+lang=EN-US>WGS-84</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>到国家</span><span lang=EN-US>80</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>的转换，由于测区范围比较大，需要进行七参数转换。</span></p>
+
+<p class=MsoNormal style='text-indent:36.75pt'><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>注意：这个例子同样适合于直接从</span><span
+lang=EN-US>WGS-84</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>坐标转换为地方坐标转换。</span></p>
+
+<p class=MsoNormal><b><span lang=EN-US>&nbsp;</span></b><b><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>分析：</span><span lang=EN-US><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span lang=EN-US><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style="mso-spacerun: yes">&nbsp;&nbsp; </span></span></b><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>首先分析坐标：因为七参数转换模型的特点，要求转换的坐标不能相差太大，</span><span lang=EN-US><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:31.5pt;mso-char-indent-count:3.0;
+mso-char-indent-size:10.5pt;mso-char-indent-size:10.5pt'><span lang=EN-US>WGS-84</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>的坐标为：</span><span lang=EN-US>023:09:33.6274<span
+style="mso-spacerun: yes">&nbsp; </span>112:55:41.2119<span
+style="mso-spacerun: yes">&nbsp;&nbsp; </span>62.536<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:31.5pt;mso-char-indent-count:3.0;
+mso-char-indent-size:10.5pt;mso-char-indent-size:10.5pt'><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>国际</span><span lang=EN-US>80</span><span style='font-family:
+宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>坐标为：</span><span
+lang=EN-US><span style="mso-spacerun: yes">&nbsp; </span>562589.8110<span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>290115.8140<span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>70.3590<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:31.5pt;mso-char-indent-count:3.0;
+mso-char-indent-size:10.5pt;mso-char-indent-size:10.5pt'><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>用</span><span lang=EN-US>WGS-84</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>不加任何参数转化为平面坐标为：</span><span lang=EN-US>2562588.851341<span
+style="mso-spacerun: yes">&nbsp; </span>390232.479605<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:31.5pt;mso-char-indent-count:3.0;
+mso-char-indent-size:10.5pt;mso-char-indent-size:10.5pt'><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>可以看到</span><span lang=EN-US> X</span><span style='font-family:
+宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>的大数差</span><span
+lang=EN-US>-2000000<span style="mso-spacerun: yes">&nbsp;&nbsp; </span>Y</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>的大数差</span><span lang=EN-US>-100000<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:31.5pt;mso-char-indent-count:3.0;
+mso-char-indent-size:10.5pt;mso-char-indent-size:10.5pt'><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>所以改变投影参数里的</span><span lang=EN-US>X,Y</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>常数改正为</span><span lang=EN-US><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:31.5pt;mso-char-indent-count:3.0;
+mso-char-indent-size:10.5pt;mso-char-indent-size:10.5pt'><span lang=EN-US>X</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>常数：</span><span lang=EN-US>0-2000000=-2000000<span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Y</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>常数：</span><span lang=EN-US>500000-100000=400000<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:31.5pt;mso-char-indent-count:3.0;
+mso-char-indent-size:10.5pt;mso-char-indent-size:10.5pt'><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>一、设置投影参数</span><span lang=EN-US><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:31.5pt;mso-char-indent-count:3.0;
+mso-char-indent-size:10.5pt;mso-char-indent-size:10.5pt'><span lang=EN-US><!--[if gte vml 1]><v:shape
+ id="_x0000_i1039" type="#_x0000_t75" style='width:254.25pt;height:195pt'>
+ <v:imagedata src="./Coord.files/image019.gif" o:title="image016"/>
+</v:shape><![endif]--><![if !vml]><img width=339 height=260
+src="./Coord.files/image019.gif" v:shapes="_x0000_i1039"><![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:31.5pt;mso-char-indent-count:3.0;
+mso-char-indent-size:10.5pt;mso-char-indent-size:10.5pt'><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:31.5pt;mso-char-indent-count:3.0;
+mso-char-indent-size:10.5pt;mso-char-indent-size:10.5pt'><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>二、计算七参数</span><span lang=EN-US><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:31.5pt;mso-char-indent-count:3.0;
+mso-char-indent-size:10.5pt;mso-char-indent-size:10.5pt'><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>选择坐标转换菜单下的“计算七参数“，打开如图对话框</span><span lang=EN-US><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:31.5pt;mso-char-indent-count:3.0;
+mso-char-indent-size:10.5pt;mso-char-indent-size:10.5pt'><span lang=EN-US><!--[if gte vml 1]><v:shape
+ id="_x0000_i1040" type="#_x0000_t75" style='width:414.75pt;height:214.5pt'>
+ <v:imagedata src="./Coord.files/image020.gif" o:title="image017"/>
+</v:shape><![endif]--><![if !vml]><img width=553 height=286
+src="./Coord.files/image021.jpg" v:shapes="_x0000_i1040"><![endif]></span></p>
+
+<p class=MsoNormal style='text-indent:34.5pt'><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>选择好源坐标和目标坐标的类型，源坐标和目标坐标的椭球基准，输入源坐标和目标坐标，点击“增加“按钮，就会将刚才的公共点坐标输入到列表中，同样的方法至少输入三个已知点到列表中，点击“计算“按钮，就可以看到计算的结果，同时在</span><span
+lang=EN-US>”RMS”</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>中会显示使用这套参数後计算後每个点的坐标中误差，如果发现误差过大，可能坐标中由输入错误的，这时可以通过在列表中选择不同的站点计算，直到满意为止。完成后点击“确定“按钮。</span></p>
+
+<p class=MsoNormal style='text-indent:34.5pt'><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>三、七参数设置</span></p>
+
+<p class=MsoNormal style='text-indent:34.5pt'><span lang=EN-US><!--[if gte vml 1]><v:shape
+ id="_x0000_i1041" type="#_x0000_t75" style='width:186.75pt;height:224.25pt'>
+ <v:imagedata src="./Coord.files/image022.gif" o:title="image019"/>
+</v:shape><![endif]--><![if !vml]><img width=249 height=299
+src="./Coord.files/image022.gif" v:shapes="_x0000_i1041"><![endif]></span></p>
+
+<p class=MsoNormal style='text-indent:34.5pt'><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>单击“确定“按钮即可设置好了七参数</span></p>
+
+<p class=MsoNormal style='text-indent:31.5pt'><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>四、完成转换</span></p>
+
+<p class=MsoNormal style='text-indent:31.5pt'><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>选择“七参数转换“打钩，就可以完成了，完成后点击保存，下次就可以使用同样的参数。</span><span
+lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-indent:31.5pt'><span lang=EN-US><!--[if gte vml 1]><v:shape
+ id="_x0000_i1042" type="#_x0000_t75" style='width:366pt;height:231.75pt'>
+ <v:imagedata src="./Coord.files/image023.gif" o:title="image020"/>
+</v:shape><![endif]--><![if !vml]><img width=488 height=309
+src="./Coord.files/image023.gif" v:shapes="_x0000_i1042"><![endif]></span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;<span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>上述的方法同样适合于从</span><span
+lang=EN-US>WGS-84</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>直接转换为地方坐标，关键是确定好投影参数的</span><span
+lang=EN-US>X,Y</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>常数。</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span lang=EN-US>&nbsp;</span></b><b><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>实例四：</span><span lang=EN-US><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>转换要求：</span><span lang=EN-US><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>将</span><span lang=EN-US>WGS-84</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>坐标一步转换为天津港坐标，使用上述的第三种方法，发现不能够实现，</span></p>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>误差较大，在</span><span lang=EN-US>4.5</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>版以后增加了一步转换的方法。</span></p>
+
+<p class=MsoNormal><b><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>步骤</span><span lang=EN-US><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:21.0pt;text-indent:-21.0pt;mso-list:l0 level1 lfo6;
+tab-stops:list 21.0pt'><![if !supportLists]><span lang=EN-US style='font-family:
+宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>一，</span><![endif]><span
+lang=EN-US><span style="mso-spacerun: yes">&nbsp; </span></span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>设置投影参数：只用设置中央子午线即可</span></p>
+
+<p class=MsoNormal style='margin-left:21.0pt'><span lang=EN-US><!--[if gte vml 1]><v:shape
+ id="_x0000_i1043" type="#_x0000_t75" style='width:273.75pt;height:240.75pt'>
+ <v:imagedata src="./Coord.files/image024.gif" o:title="image021"/>
+</v:shape><![endif]--><![if !vml]><img width=365 height=321
+src="./Coord.files/image024.gif" v:shapes="_x0000_i1043"><![endif]></span></p>
+
+<p class=MsoNormal style='margin-left:21.0pt;text-indent:-21.0pt;mso-list:l0 level1 lfo6;
+tab-stops:list 21.0pt'><![if !supportLists]><span lang=EN-US style='font-family:
+宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>二，</span><![endif]><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>计算七参数，直接输入</span><span lang=EN-US>WGS-84</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>坐标和当地坐标，计算七参，方法如上。</span></p>
+
+<p class=MsoNormal style='margin-left:21.0pt'><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>如果</span><span
+lang=EN-US>PRMS(</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>平面误差</span><span lang=EN-US>)</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>和</span><span lang=EN-US>HRMS</span><span style='font-family:
+宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>（高层误差）都在允许的范围内，就可以点击确定，</span></p>
+
+<p class=MsoNormal style='margin-left:21.0pt'><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>如果有误，注意检查投影参数是否是当地坐标的参数。</span></p>
+
+<p class=MsoNormal style='margin-left:21.0pt'><span lang=EN-US><!--[if gte vml 1]><v:shape
+ id="_x0000_i1044" type="#_x0000_t75" style='width:414.75pt;height:207pt'>
+ <v:imagedata src="./Coord.files/image025.png" o:title="image022"/>
+</v:shape><![endif]--><![if !vml]><img width=553 height=276
+src="./Coord.files/image026.gif" v:shapes="_x0000_i1044"><![endif]></span></p>
+
+<p class=MsoNormal><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:21.0pt;text-indent:-21.0pt;mso-list:l0 level1 lfo6;
+tab-stops:list 21.0pt'><![if !supportLists]><span lang=EN-US style='font-family:
+宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>三，</span><![endif]><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>设置一步参数：界面和原有的七参数是一致的，就是左下角多了一个“一步转换参数”</span></p>
+
+<p class=MsoNormal style='margin-left:21.0pt'><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>的选择，这里要打钩，（原有的</span><span
+lang=EN-US>WGS84</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>到北京</span><span lang=EN-US>54</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>的七参数，不要打钩），确定。</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;<!--[if gte vml 1]><v:shape id="_x0000_i1045"
+ type="#_x0000_t75" style='width:186pt;height:228.75pt'>
+ <v:imagedata src="./Coord.files/image027.gif" o:title="image024"/>
+</v:shape><![endif]--><![if !vml]><img width=248 height=305
+src="./Coord.files/image027.gif" v:shapes="_x0000_i1045"><![endif]></span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>四，选择七参数，检查及计算结果。</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;<!--[if gte vml 1]><v:shape id="_x0000_i1046"
+ type="#_x0000_t75" style='width:367.5pt;height:236.25pt'>
+ <v:imagedata src="./Coord.files/image028.gif" o:title="image025"/>
+</v:shape><![endif]--><![if !vml]><img width=490 height=315
+src="./Coord.files/image028.gif" v:shapes="_x0000_i1046"><![endif]></span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>坐标反算只要交换一下目标坐标和椭球选择就行，参数不用修改。</span></p>
+
+<p class=MsoNormal><span lang=EN-US><!--[if gte vml 1]><v:shape id="_x0000_i1047"
+ type="#_x0000_t75" style='width:366.75pt;height:237.75pt'>
+ <v:imagedata src="./Coord.files/image029.gif" o:title="image026"/>
+</v:shape><![endif]--><![if !vml]><img width=489 height=317
+src="./Coord.files/image029.gif" v:shapes="_x0000_i1047"><![endif]></span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>因为时间关系，对于坐标系统库管理，高程拟合以及</span><span
+lang=EN-US>ITRF</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>框架的应用没有写详细的说明，</span></p>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>如果用户自己用过有体会和心得或者带笔写了说明的，希望可以共同探讨。</span></p>
+
+<p class=MsoNormal><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>
+<html>
