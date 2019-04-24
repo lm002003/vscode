@@ -61,39 +61,14 @@ p143. Python对命名的一般要求：
 ![](https://img2018.cnblogs.com/blog/1588269/201903/1588269-20190320151056774-779158708.png)
 ![](https://img2018.cnblogs.com/blog/1588269/201903/1588269-20190320152103277-742030708.png)
 
-## 关于如何查看本地python类库详细信息的方法
+## SRTM数据下载
 
-> [关于如何查看本地python类库详细信息的方法 - 小白裸奔 - CSDN博客](https://blog.csdn.net/u013258415/article/details/79363028)
-> python -m pydoc -p 1234
-> help('modules')
+DLR的数字高程数据（免费的最高精度DEM数据）下载方法 | 数据地图博客  http://mapclub.cn/archives/2246
 
-![](https://img2018.cnblogs.com/blog/1588269/201904/1588269-20190414093517014-1965123339.png)
-下图箭头所示：是我安装的autocad包（ezdxf）
-![](https://img2018.cnblogs.com/blog/1588269/201904/1588269-20190414094026330-1492841231.png)
+Global Data Explorer (Powered by GeoBrain)  https://gdex.cr.usgs.gov/gdex/
 
-![](https://img2018.cnblogs.com/blog/1588269/201904/1588269-20190414095421160-906886858.png)
-<font size="4" color=red><b>[b]、[q]分别表示浏览和退出(注意：python2.7的界面不同)</b></font>
+SRTM Data – CGIAR-CSI SRTM  http://srtm.csi.cgiar.org/srtmdata/
 
-## 如何查看Python 安装位置以及已经安装的库
+EOWEB GeoPortal  https://geoservice.dlr.de/egp/main?context=dlr:srtm#mainWindowtabMap
 
-> 就是在python环境中输入：
-help(‘modules’) 就能列出所有已经安装的模块了。
-
-[如何查看Python 安装位置以及已经安装的库 - parasoft的专栏 - CSDN博客](https://blog.csdn.net/parasoft/article/details/83413608)
-![](https://img2018.cnblogs.com/blog/1588269/201904/1588269-20190414094517929-728711502.png)
-![](https://img2018.cnblogs.com/blog/1588269/201904/1588269-20190414175849787-1697033753.png)
-
-## Python 常用技巧：库/模块的安装、查看和卸载
-
-[Python 常用技巧：库/模块的安装、查看和卸载 - Siucaan - CSDN博客](https://blog.csdn.net/qq_23869697/article/details/79645438)
-
-![](https://img2018.cnblogs.com/blog/1588269/201904/1588269-20190414110143851-2084014104.png)
-![](https://img2018.cnblogs.com/blog/1588269/201904/1588269-20190414110207323-822806086.png)
-
-## 模块(空)
-
-## 包和库(空)
-
-## 帮助、文档和源码(空)
-
-## 标准库(空)
+https://stackoverflow.com/questions/14535730/what-does-hashable-mean-in-python
