@@ -72,3 +72,19 @@ SRTM Data – CGIAR-CSI SRTM  http://srtm.csi.cgiar.org/srtmdata/
 EOWEB GeoPortal  https://geoservice.dlr.de/egp/main?context=dlr:srtm#mainWindowtabMap
 
 https://stackoverflow.com/questions/14535730/what-does-hashable-mean-in-python
+
+1. 插入命令
+
+|命令|操作
+|:--|:--
+|i|光标所在位置前插入
+|I|光标所在行，行首插入
+|a|光标所在位置后插入
+|A|光标所在行，行尾插入
+|o|光标所在行，向下另起一行插入
+|O|光标所在行，向上另起一行插入
+|s|删除字符插入
+|S|删除整行插入
+|.|重复执行上一条命令
+
+2. 定位命令
