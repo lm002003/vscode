@@ -8,8 +8,9 @@
 
 ## 认识Jupyter Notebooks
 
-**使用 Jupyter Notebooks 的`神奇功能`**
->Jupyter Notebooks 的开发者已经在其中内置了一些预定义的神奇功能，能让你的生活更轻松，让你的工作更具交互性。你可以运行下面的命令来查看功能列表（注：% 符号通常不需要，因为自动补齐功能通常是开启的）：
+**使用 Jupyter Notebooks 的神奇功能**
+
+> Jupyter Notebooks 的开发者已经在其中内置了一些预定义的神奇功能，能让你的生活更轻松，让你的工作更具交互性。你可以运行下面的命令来查看功能列表（注：% 符号通常不需要，因为自动补齐功能通常是开启的）：
 
 <font size="4" color=red><b>%lsmagic</b></font>
 
@@ -37,11 +38,19 @@
 
 神奇之处可不止这点。你甚至能在你的笔记本中使用其它语言，比如 R、Julia、JavaScript 等。我个人很喜欢 R 中的 ggplot2 软件包，所以使用它来进行探索性的数据分析具有很大很大的优势。
 
-要在 Jupyter 中启用 R，你需要 IRKernel。这是针对 R 的专用 kernel，你可以在 GitHub 上获取。这需要 8 个步骤，已经有详细的解释了，另外还有截图指导，参阅：https://discuss.analyticsvidhya.com/t/how-to-run-r-on-jupyter-ipython-notebooks/5512
+要在 Jupyter 中启用 R，你需要 IRKernel。这是针对 R 的专用 kernel，你可以在 GitHub 上获取。这需要 8 个步骤，已经有详细的解释了，另外还有截图指导，参阅：
 
-如果你是一位 Julia 用户，你也能在 Jupyter Notebooks 中使用 Julia！你可以查看这篇为 Julia 用户学习数据科学而编写的全面介绍文章，其中有一个章节就是关于如何在 Jupyter 环境中使用 Julia：https://www.analyticsvidhya.com/blog/2017/10/comprehensive-tutorial-learn-data-science-julia-from-scratch/
+https://discuss.analyticsvidhya.com/t/how-to-run-r-on-jupyter-ipython-notebooks/5512
 
-如果你更偏爱 JavaScript，那么我推荐使用 IJavascript kernel。这个 GitHub 库包含了在不同操作系统上安装这个 kernel 的各个步骤：https://github.com/n-riesco/ijavascript。注意，在使用它之前，你必需要先安装好 Node.js 和 npm。
+如果你是一位 Julia 用户，你也能在 Jupyter Notebooks 中使用 Julia！你可以查看这篇为 Julia 用户学习数据科学而编写的全面介绍文章，其中有一个章节就是关于如何在 Jupyter 环境中使用 Julia：
+
+https://www.analyticsvidhya.com/blog/2017/10/comprehensive-tutorial-learn-data-science-julia-from-scratch/
+
+如果你更偏爱 JavaScript，那么我推荐使用 IJavascript kernel。这个 GitHub 库包含了在不同操作系统上安装这个 kernel 的各个步骤：
+
+https://github.com/n-riesco/ijavascript。
+
+注意，在使用它之前，你必需要先安装好 Node.js 和 npm。
 
 **Jupyter Notebooks 中的交互式仪表盘——何乐不为？**
 
@@ -50,7 +59,9 @@
 <font size="4" color=red><b>from ipywidgets import widgets</b></font>
 小部件的基本类型有典型的文本输入小部件、基于输入的小部件和按钮小部件。下面的例子来自 Dominodatalab，给出了交互式小部件的一些外观：
 ![](https://img2018.cnblogs.com/blog/1588269/201909/1588269-20190905180129382-1320299156.jpg)
-关于小部件的完整指南，请参阅：https://blog.dominodatalab.com/interactive-dashboards-in-jupyter/
+关于小部件的完整指南，请参阅：
+
+https://blog.dominodatalab.com/interactive-dashboards-in-jupyter/
 
 **键盘快捷键——节省时间且更有生产力！**
 
@@ -118,7 +129,11 @@ Jupyter Notebooks 提供了两种不同的键盘输入模式——命令和编�
 
 你也可以使用 nbconvert 选项手动将你的笔记本转换成 HTML 或 PDF 等格式。
 
-你也可以使用 jupyterhub，地址：https://github.com/jupyterhub/jupyterhub。其能让你将笔记本托管在它的服务器上并进行多用户共享。很多顶级研究项目都在使用这种方式进行协作。
+你也可以使用 jupyterhub，地址：
+
+https://github.com/jupyterhub/jupyterhub。
+
+其能让你将笔记本托管在它的服务器上并进行多用户共享。很多顶级研究项目都在使用这种方式进行协作。
 
 **JupyterLab——Jupyter Notebooks 的进化**
 
@@ -128,7 +143,11 @@ JupyterLab 是今年二月份推出的，被认为是 Jupyter Notebooks 的进�
 
 JupyterLab 让你能在一个窗口中排布你的笔记本、终端、文本文件和输出结果工作区！你只需拖放你需要的单元即可。你也可以编辑 Markdown、CSV 和 JSON 等常用文件格式并实时预览修改所造成的影响。
 
-如果你想在你的机器上试用 JupyterLab，可查看安装说明：http://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html。JupyterLab 的开发者的长期目标是最终替代 Jupyter Notebooks。但目前来看这还需要一些时间。
+如果你想在你的机器上试用 JupyterLab，可查看安装说明：
+
+http://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html。
+
+JupyterLab 的开发者的长期目标是最终替代 Jupyter Notebooks。但目前来看这还需要一些时间。
 
 **最佳实践**
 
@@ -140,7 +159,9 @@ JupyterLab 让你能在一个窗口中排布你的笔记本、终端、文本文
 * 不管你的代码需要什么库，都在你的笔记本起始处导入它们。（并在旁边添加注释说明你载入它们的目的）
 * 确保你的代码有适当的行距。你不要将你的循环和函数放在同一行——否则如果后面要引用它们，会让人抓狂的！
 * 有时候你的文件中有非常大量的代码。看看能不能将你认为不重要的某些代码隐藏起来，之后再引用。这能让你的笔记本看起来整洁清晰，这是非常可贵的。
-* 查看这个在 matplotlib 上的笔记本，看看可以如何简练地进行呈现：http://nbviewer.jupyter.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-4-Matplotlib.ipynb
+* 查看这个在 matplotlib 上的笔记本，看看可以如何简练地进行呈现：
+
+http://nbviewer.jupyter.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-4-Matplotlib.ipynb
 
 另一个额外技巧！在你想创建一个演示文稿时，你可能首先想到的工具是 PowerPoint 和 Google Slides。其实你的 Jupyter Notebooks 也能创建幻灯片！还记得我说过 Jupyter Notebooks 很灵活吗？我可没有夸大其辞。
 
@@ -151,6 +172,8 @@ JupyterLab 让你能在一个窗口中排布你的笔记本、终端、文本文
 
 注意，这篇文章远没有完全覆盖 Jupyter Notebooks 的功能。还有很多东西要在你使用得更多之后才会用到。功能虽多，但关键在于实践出真知。
 
-这个 GitHub 库包含了一些有趣迷人的 Jupyter Notebooks：https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks
+这个 GitHub 库包含了一些有趣迷人的 Jupyter Notebooks：
+
+https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks
 
 这份指南只是你的数据科学旅程的起点，我很高兴能与你一起前行！
