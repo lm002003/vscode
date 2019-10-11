@@ -1,0 +1,26 @@
+{
+    "snippets" : [
+        {
+			"_说明":"1、说明性文字不能位于注释体的里面。2、说明性文字里面不能有双引号code（和注释体重复）",
+            "name" : "File Commnets",
+            "code" : [
+                "# @This is an example snippet!",
+                "# @To create your own, add a new snippet block to the",
+                "# @snippets.json file in your jupyter nbextensions directory:",
+                "# @/nbextensions/snippets/snippets.json",
+                "import this"
+            ]
+        },
+		{
+			"_说明":"3、双引号括三个单引号，不能单引号括三个双引号，也不能全部单引号或双引号。",
+            "name" : "Function Commnets",
+            "code" : [
+                "'''",
+                ": 函数功能:",
+                ": param:参数",
+                ": return:返回值",
+                "'''"
+            ]
+        }
+    ]
+}

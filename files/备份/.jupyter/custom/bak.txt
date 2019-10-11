@@ -1,0 +1,2 @@
+1、jt -t solarizedd -f fira -fs 11 -ofs 11 -cellw 90%  -T -N
+2、custom.css文件修改处以/*lm002003:原始值为90%*/标记
