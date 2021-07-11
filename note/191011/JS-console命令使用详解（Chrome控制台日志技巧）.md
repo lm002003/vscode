@@ -6,9 +6,9 @@
 
 ## 使用Chrome console提取页面数据
 
-![](images/JS%20-%20console命令使用详解（Chrome控制台日志技巧）+2019-11-19-16-55-55.png)
+![](images/JS-console命令使用详解（Chrome控制台日志技巧）+2019-11-19-16-55-55.png)
 
-![](images/JS%20-%20console命令使用详解（Chrome控制台日志技巧）+2019-11-19-16-56-07.png)
+![](images/JS-console命令使用详解（Chrome控制台日志技巧）+2019-11-19-16-56-07.png)
 
 ```js
 var ip = document.getElementsByClassName('link-tit');
@@ -37,13 +37,13 @@ var arr = str.match(re);
 console.log(arr);
 ```
 
-![](images/JS%20-%20console命令使用详解（Chrome控制台日志技巧）+2019-11-19-16-56-17.png)
+![](images/JS-console命令使用详解（Chrome控制台日志技巧）+2019-11-19-16-56-17.png)
 
 [Chrome 控制台console的用法 - qq_30599553的博客 - CSDN博客](https://blog.csdn.net/qq_30599553/article/details/86300610)
 
 [chrome开发者工具（2）之console的使用 - 指尖的星光的博客 - CSDN博客](https://blog.csdn.net/qq_39111325/article/details/96182803)
 
-![](images/JS%20-%20console命令使用详解（Chrome控制台日志技巧）+132239377465002.gif)
+![](images/JS-console命令使用详解（Chrome控制台日志技巧）+132239377465002.gif)
 
 ## 通过chrome console 快速获取网页连接
 
@@ -61,5 +61,3 @@ console.log(str);
 ```
 
 [Git三大特色之Stage(暂存区)](https://blog.csdn.net/qq_32452623/article/details/78417609)
-
-http://cu.manmanbuy.com/discuxiao_700655.aspx?bijiatool=v2
