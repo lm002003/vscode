@@ -2,23 +2,15 @@
 
 ## 默认网关与默认路由
 
-## 用Paste Image插件来方便的给Markdown添加截图的功能
+## WIN10远程桌面设置（重点）
 
-日常用vscode写markdown时可能会需要添加截图，这时一般的做法有两种，
+[WIN10开启远程桌面设置（广域网远程桌面） | 西枫里博客](https://www.anji66.net/article/id/150.html)
+![](images/VPS+2019-11-26-10-45-24.png)
 
-* 一种是把图片上传到图床，然后把图片链接写到\!\[\]\(\)里  
-* 另一种是，把图片保存到本地某个目录下，使用相对路径添加图片
-这两种方式操作起来都比较麻烦，因为都需要先把截图保存下来，所以有没有类似qq，wechat那种可以直接使用截图的方式呢，最后发现了Paste Image这个插件。
-![](images/VPS+2019-11-15-16-28-36.png)
-![](images/VPS+2019-11-15-16-30-04.png)
-[Paste Image - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image)
+## 远程桌面“你的凭据不工作”
 
-```python
-import os
-sys.print("this is a python")
-```
-
-## vscode-hexo插件
-
-充分利用起vscode的插件，让其更便利、更强大！
-"paste image" markdown hexo
+![](images/VPS+2019-11-26-10-32-38.png)
+![](images/VPS+2019-11-26-10-35-50.png)
+![](images/VPS+2019-11-26-10-38-37.png)
+[远程桌面技术之----“你的凭据不工作” - 鸿炜博客 - CSDN博客](https://blog.csdn.net/qq_29918079/article/details/80011234)
+![](images/VPS+2019-11-26-10-40-29.png)
